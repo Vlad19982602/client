@@ -11,14 +11,14 @@ function SubTitle () {
                 <div className='container'>
                     <div className="subTitle__row">
                         <div className='subTitle__wrapper'>
-                            <div className='col-md-4 col-sm-3 col-xs-10'>
+                            <div className='col-md-4 col-sm-4 col-xs-10'>
                                 <div className='subTitle__logo'>
                                     <img src={logoImg} alt='logo' className='subTitle__logo-img'/>
                                     <div>Системы вентиляции помещений в Челябинске и Челябинской области</div>
                                 </div>
                             </div>
                         </div>
-                        <div className='col-md-4 col-sm-3 col-xs-10'>
+                        <div className='col-md-4 col-sm-4 col-xs-10'>
                             <div className='subTitle__wrapper'>
                                 <div className='subTitle__descr'>
                                     <strong>vent@airmaster74.ru</strong>
@@ -29,7 +29,7 @@ function SubTitle () {
                                 </div>
                             </div>
                         </div>
-                        <div className='col-md-4 col-sm-3 col-xs-10'>
+                        <div className='col-md-4 col-sm-4 col-xs-10'>
                             <div className='subTitle__wrapper'>
                                 <Nav className="justify-content-center" activeKey="/home">
                                     <Nav.Item>

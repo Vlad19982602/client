@@ -1,9 +1,5 @@
-.subTitle {
-    margin-right: -15px;
-    margin-left: -15px;
-}
-
 .subTitle__row {
+    width: 100%;
     display: flex;
     justify-content: space-between;
 }
@@ -49,5 +45,5 @@
 }
 
 .subTitle__btn {
-    width: 100%;
+    width: 160px;
 }

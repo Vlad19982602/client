@@ -1,9 +1,11 @@
 import './header.css'
+import Dropdown from 'react-bootstrap/Dropdown';
+
 
 function Header () {
     return (
         <header className='header'>
-            <div className="row">
+            <div className='container'>
                 <nav className="header__menu">
                     <ul>
                         <li className="header__menu-item" >
@@ -12,49 +14,33 @@ function Header () {
                         <li className="header__menu-item" >
                             <a className="header__menu__link-item" href="/komanda">О нас</a>
                         </li>
-                        <li className="header__menu-item">
-                            <a className="header__menu__link-item header__menu__tm-link" href="#header__menu:more">Услуги</a>
-                            <ul className="sub-header__menu">
-                                <li className="header__menu-item sub__header__menu">
-                                <a className="header__menu-i"  href="/uslugi" >Услуги</a>
-                                </li>
-                                <li className="header__menu-item sub__header__menu">
-                                <a className="header__menu-i"  href="/proizvodstvo" >Вентиляция на производстве</a>
-                                </li>
-                                <li className="header__menu-item sub__header__menu">
-                                <a className="header__menu-i"  href="/dom" >Вентиляция в коттедже</a>
-                                </li>
-                                <li className="header__menu-item sub__header__menu">
-                                <a className="header__menu-i"  href="/basseyn_chastnyy" >Вентиляция в частном бассейне</a>
-                                </li>
-                                <li className= "header__menu-item sub__header__menu">
-                                <a className="header__menu-i"  href="/restoran_kafe_bar" >Вентиляция в кафе, ресторане, баре</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li className="header__menu-item">
-                            <a className="header__menu__link-item header__menu__tm-link" href="#header__menu:more1">Портфолио</a>
-                            <ul className="sub-header__menu">
-                                <li className="header__menu-item sub__header__menu">
-                                <a className="header__menu-i"  href="/portfolio">Портфолио</a>
-                                </li>
-                                <li className="header__menu-item sub__header__menu">
-                                <a className="header__menu-i" href="/dom_photo">В частном доме</a>
-                                </li>
-                                <li className="header__menu-item sub__header__menu">
-                                <a className="header__menu-i" href="/ventilyatsiya_interior_photo">Климатические системы в интерьере</a>
-                                </li>
-                                <li className="header__menu-item sub__header__menu">
-                                <a className="header__menu-i" href="/na_proizvodstve_photo" >На производстве</a>
-                                </li>
-                                <li className="header__menu-item sub__header__menu">
-                                <a className="header__menu-i" href="/aspiration_photo">Системы аспирации</a>
-                                </li>
-                                <li className="header__menu-item sub__header__menu">
-                                <a className="header__menu-i" href="/montazh_photo">Монтаж вентиляции</a>
-                                </li>
-                            </ul>
-                        </li>
+                        <Dropdown>
+                            <Dropdown.Toggle variant="success" id="dropdown-basic">
+                                Услуги
+                            </Dropdown.Toggle>
+
+                            <Dropdown.Menu>
+                                <Dropdown.Item href="#/action-1">Вентиляция на производстве</Dropdown.Item>
+                                <Dropdown.Item href="#/action-2">Вентиляция в коттедже</Dropdown.Item>
+                                <Dropdown.Item href="#/action-3">Вентиляция в частном бассейне</Dropdown.Item>
+                                <Dropdown.Item href="#/action-4">Вентиляция в кафе, ресторане, баре</Dropdown.Item>
+                                
+                            </Dropdown.Menu>
+                        </Dropdown>
+                        <Dropdown>
+                            <Dropdown.Toggle variant="success" id="dropdown-basic">
+                                Портфолио
+                            </Dropdown.Toggle>
+
+                            <Dropdown.Menu>
+                                <Dropdown.Item href="#/action-1">В частном доме</Dropdown.Item>
+                                <Dropdown.Item href="#/action-2">Климатические системы в интерьере</Dropdown.Item>
+                                <Dropdown.Item href="#/action-3">На производстве</Dropdown.Item>
+                                <Dropdown.Item href="#/action-4">Системы аспирации</Dropdown.Item>
+                                <Dropdown.Item href="#/action-5">Монтаж вентиляции</Dropdown.Item>
+                                
+                            </Dropdown.Menu>
+                        </Dropdown>
                         <li className="header__menu-item">
                             <a className="header__menu__link-item" href="/kak_rabotaem">Как работаем</a>
                         </li>

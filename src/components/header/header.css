@@ -9,6 +9,10 @@ nav.header__menu {
     box-shadow: 0 1px 3px rgba(0,0,0,0);
 }
 
+.header__menu .dropdown {
+    margin-left: 10px;
+}
+
 .header__menu ul {
     display: inline-flex;
 }

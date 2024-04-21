@@ -1,3 +1,8 @@
+.subTitle {
+    background-color: #f8f9fa;
+    border-color: #f8f9fa;
+}
+
 .subTitle__row {
     width: 100%;
     display: flex;

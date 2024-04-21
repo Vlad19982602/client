@@ -108,34 +108,20 @@ function Main () {
                         </div>
                     </div>
                 </div>
-                <div className='col-lg-4 col-lg-offset-1 col-md-5 col-md-offset-1 col-sm-8 col-sm-offset-2 col-xs-12'>
+                <div className='col-lg-4 offset-lg-1 col-md-5 offset-md-1 col-sm-8 col-sm-offset-2 col-xs-12'>
                     <div
                         className="modal show"
                         style={{ display: 'block', position: 'initial' }}
                         >
                         <Modal.Dialog>
-                            <Modal.Title className='main__modal-title'><h2>Оставьте заявку</h2></Modal.Title>
+                            <Modal.Title className='main__modal-title'><h2>Позвоните нам <br></br> ПРЯМО СЕЙЧАС</h2></Modal.Title>
 
-                            <Form>
-                                <Form.Group className="mb-3" controlId="formBasicEmail">
-                                    <Form.Label className='mb-444'>Адрес электронной почты</Form.Label>
-                                    <Form.Control type="email" placeholder="Введите адрес электронной почты" />
-                                    <Form.Text className="text-muted">
-                                    Мы никогда не передадим ваш адрес электронной почты кому-либо еще.
-                                    </Form.Text>
-                                </Form.Group>
-
-                                <Form.Group className="mb-3" controlId="formBasicPassword">
-                                    <Form.Label className='mb-444'>Пароль</Form.Label>
-                                    <Form.Control type="password" placeholder="Пароль" />
-                                </Form.Group>
-                                <Form.Group className="mb-3" controlId="formBasicCheckbox">
-                                    <Form.Check type="checkbox" label="Проверить меня" />
-                                </Form.Group>
-                                <Button className='main__btn' variant="primary" type="submit">
-                                    Оставить заявку
-                                </Button>
-                                </Form>
+                            <Form.Control className='main__input' type="text" placeholder="Введите ваше имя" />
+                            <Form.Control className='main__input' type="text" placeholder="Введите ваш телефон" />
+                            <Button className='main__btn' variant="success" type="submit">
+                                Набрать менеджеру
+                            </Button>
+                            <p class="form_notice">Ваши данные конфиденциальны</p>
                         </Modal.Dialog>
                     </div>
                 </div>

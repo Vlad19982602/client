@@ -39,6 +39,12 @@
     display: block;
     margin: 0 auto;
 }
+
+.main__btn:hover {
+    color: #198754;
+    background-color: #f8f9fa;
+}
+
 .mb-444 {
     float: left;
 }

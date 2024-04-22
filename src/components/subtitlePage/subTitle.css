@@ -52,3 +52,8 @@
 .subTitle__btn {
     width: 160px;
 }
+
+.subTitle__btn:hover {
+    color: #198754;
+    background-color: #f8f9fa;
+}

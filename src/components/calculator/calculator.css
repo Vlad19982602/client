@@ -11,7 +11,7 @@
 
 .calculator__title {
     color: #000;
-    font-size: 46px;
+    font-size: 36px;
     font-family: 'Ubuntu',Arial,sans-serif;
     line-height: 1.2;
     font-weight: 700;
@@ -20,6 +20,7 @@
     background-position: center center;
     border-color: transparent;
     border-style: solid;
+    padding: 10px;
 }
 
 .calculator__subtitle {
@@ -31,6 +32,7 @@
     background-position: center center;
     border-color: transparent;
     border-style: solid;
+    padding: 10px;
 }
 
 .calculator__btn {

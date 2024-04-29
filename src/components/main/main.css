@@ -26,8 +26,14 @@
 }
 
 .main_features_block {
+    position: relative;
     color: #ffffff;
     text-align: center;
+}
+.main_features_block p {
+    position: absolute;
+    top: 60px;
+    left: 20px;
 }
 
 .main__wrapper .main__reg {

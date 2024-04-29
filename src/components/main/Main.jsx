@@ -121,7 +121,7 @@ function Main () {
                             <Button className='main__btn' variant="success" type="submit">
                                 Набрать менеджеру
                             </Button>
-                            <p class="form_notice">Ваши данные конфиденциальны</p>
+                            <p className="form_notice">Ваши данные конфиденциальны</p>
                         </Modal.Dialog>
                     </div>
                 </div>

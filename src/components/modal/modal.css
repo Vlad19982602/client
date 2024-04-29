@@ -1,0 +1,71 @@
+.modal-window {
+    width: 100vw;
+    margin: 0;
+    bottom: 50px;
+    right: 65px;
+    border-radius: 5px;
+    box-shadow: 0 0 20px 0 rgba(0,0,0,.4);
+    background: #fff;
+    position: fixed;
+    z-index: 1;
+    cursor: default;
+    max-width: 360px;
+}
+
+.modal__top-panel {
+    width: 100%;
+    height: 50px;
+    background: #000;
+    position: fixed;
+    display: table;
+}
+
+.modal__wrapper {
+    position: relative;
+    width: 330px;
+    margin-top: 48px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    max-height: 65vh;
+    text-align: center;
+}
+
+.modal__btn-close {
+    position: absolute;
+    top: 9px;
+    right: 9px;
+    padding: 6px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.modal__image-wrapper {
+    position: absolute;
+    display: flex;
+    top: -65px;
+    left: 50%;
+    width: 70px;
+    height: 70px;
+    overflow: hidden;
+    border-radius: 50%;
+    background: #ffffff;
+    transform: translateX(-50%);
+}
+.modal__image-pic {
+    width: 70px;
+    background: url('../../img/noroot.png') center center/cover no-repeat;
+}
+
+.modal__text-wrapper {
+    display: flex;
+    text-align: center;
+    padding: 25px;
+}
+
+.bold {
+    font-weight: bolder;
+}
+.small {
+    font-size: 12px;
+}

@@ -9,12 +9,10 @@ import { useEffect, useState, useRef } from 'react';
 
 
 
+
 function App() {
 
-  const [open, setOpen] = useState(false);
-
-  const [modalAltive, setModalActive] = useState(true);
-
+  
   const [scrollPosition, setSrollPosition] = useState(0);
   const [showGoTop, setshowGoTop] = useState("goTopHidden");
   const refScrollUp = useRef();
@@ -38,11 +36,13 @@ function App() {
     refScrollUp.current.scrollIntoView({ behavior: "smooth" });
   };
 
+
+
   return (
     <div className="App">
       <div ref={refScrollUp}> </div>
       <GoTop showGoTop={showGoTop} scrollUp={handleScrollUp} />
-      <Modal active={modalAltive} setActive={setModalActive}  open={open} onClose={() => setOpen(false)}/>
+      <Modal />
       <Header/>
       <SubTitle/>
       <Main/>

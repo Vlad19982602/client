@@ -2,25 +2,34 @@ import React from 'react'
 import './modal.css'
 
 import CloseButton from 'react-bootstrap/CloseButton';
+import { useEffect, useState } from 'react';
 
 
-const Modal = ({active, setActive, children}) => {
+const Modal = ({children, active, setActive}) => {
 
-    function handleClick(close) {
-        alert('You clicked me!');
-    }
+    const [modalAltive, setModalActive] = useState(false);
+
+    useEffect(() => {
+        const timeout = setTimeout(() => {
+          setModalActive(true);
+        }, 5000)
+    
+        return () => {
+          clearTimeout(timeout);
+        }
+      }, [])
 
     return(
         <>
-            <div id='modal' className='modal-window' onClick={() => setActive=(false)}>
-                <CloseButton onClick={handleClick} className='modal__btn-close'/>
+            <div id='modal' className='modal-window'>
+                <CloseButton className='modal__btn-close'/>
                 <div className='modal__wrapper' onClick={e => e.stopPropagation()}>
                     <div className='modal__image-wrapper'>
                         <div className='modal__image-pic'></div>
                     </div>
                     <div className='modal__text-wrapper'>
                         <div className='modal__text-title'>
-                            <bold className="bold">"С удовольствием отвечу на ваши вопросы!"</bold>
+                            <div className="bold">С удовольствием отвечу на ваши вопросы!</div>
                             <br/><br/>
                             <small className='small'>менеджер по работе с клиентами Татьяна Бойко</small>
                         </div>

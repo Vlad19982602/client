@@ -1,13 +1,13 @@
 .decoration {
-    padding: 8rem 0;
+    padding: 4rem 0 0 0;
     background-color: #f7f7f7;
 }
 
 .decoration__head {
     font-size: 30px;
-    margin-bottom: 8rem;
     text-align: center;
     text-transform: uppercase;
+    background-color: #f7f7f7;
 }
 .decoration__head-sub {
     margin-top: 2rem;
@@ -17,4 +17,5 @@
     width: 17rem;
     height: 0.2rem;
     background: url('../../img/line.png') 0 0 no-repeat;
+    background-color: #f7f7f7;
 }

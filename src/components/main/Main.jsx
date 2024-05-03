@@ -8,7 +8,7 @@ function Main () {
         <main className='main'>
             <div className='main__shadow'></div>
             <div className='container'>
-                <div className='col-lg-6 col-md-6'>
+                <div className='col-lg-6 col-md-6 main__top'>
                     <div className='main__text'>Свежий воздух без пыли, запахов, дыма в Вашем доме и на производстве с гарантией 3 года</div>
                     <div className="main__wrapper">
                         <div className="col-sm-3 col-xs-6 main__reg">

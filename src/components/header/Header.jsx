@@ -20,10 +20,10 @@ function Header () {
                             </Dropdown.Toggle>
 
                             <Dropdown.Menu>
-                                <Dropdown.Item href="#/action-1">Вентиляция на производстве</Dropdown.Item>
-                                <Dropdown.Item href="#/action-2">Вентиляция в коттедже</Dropdown.Item>
-                                <Dropdown.Item href="#/action-3">Вентиляция в частном бассейне</Dropdown.Item>
-                                <Dropdown.Item href="#/action-4">Вентиляция в кафе, ресторане, баре</Dropdown.Item>
+                                <Dropdown.Item href="https://www.airmaster74.ru/proizvodstvo">Вентиляция на производстве</Dropdown.Item>
+                                <Dropdown.Item href="https://www.airmaster74.ru/dom">Вентиляция в коттедже</Dropdown.Item>
+                                <Dropdown.Item href="https://www.airmaster74.ru/basseyn_chastnyy">Вентиляция в частном бассейне</Dropdown.Item>
+                                <Dropdown.Item href="https://www.airmaster74.ru/restoran_kafe_bar">Вентиляция в кафе, ресторане, баре</Dropdown.Item>
                                 
                             </Dropdown.Menu>
                         </Dropdown>
@@ -33,11 +33,11 @@ function Header () {
                             </Dropdown.Toggle>
 
                             <Dropdown.Menu>
-                                <Dropdown.Item href="#/action-1">В частном доме</Dropdown.Item>
-                                <Dropdown.Item href="#/action-2">Климатические системы в интерьере</Dropdown.Item>
-                                <Dropdown.Item href="#/action-3">На производстве</Dropdown.Item>
-                                <Dropdown.Item href="#/action-4">Системы аспирации</Dropdown.Item>
-                                <Dropdown.Item href="#/action-5">Монтаж вентиляции</Dropdown.Item>
+                                <Dropdown.Item href="https://www.airmaster74.ru/dom_photo">В частном доме</Dropdown.Item>
+                                <Dropdown.Item href="https://www.airmaster74.ru/ventilyatsiya_interior_photo">Климатические системы в интерьере</Dropdown.Item>
+                                <Dropdown.Item href="https://www.airmaster74.ru/na_proizvodstve_photo">На производстве</Dropdown.Item>
+                                <Dropdown.Item href="https://www.airmaster74.ru/aspiration_photo">Системы аспирации</Dropdown.Item>
+                                <Dropdown.Item href="https://www.airmaster74.ru/montazh_photo">Монтаж вентиляции</Dropdown.Item>
                                 
                             </Dropdown.Menu>
                         </Dropdown>

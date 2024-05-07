@@ -1,0 +1,11 @@
+.contacts .row {
+    display: flex;
+    justify-content: center;
+}
+
+.contacts__iframe {
+    width: 700px;
+    height: 450px;
+    border: 0;
+    
+}

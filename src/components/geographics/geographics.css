@@ -1,0 +1,11 @@
+.geographics__centeredContainer {
+    background-color: #f7f7f7;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.geographics-wrapper {
+    display: block;
+    margin: 0 auto;
+    background-color: #f7f7f7;
+}

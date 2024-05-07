@@ -87,3 +87,7 @@ label {
 legend {
 	display: block;
 }
+
+.App {
+	background-color: #f7f7f7;
+}

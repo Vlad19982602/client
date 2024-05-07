@@ -13,9 +13,23 @@
     margin-top: 2rem;
     margin-left: 50%;
     -webkit-transform: translateX(-50%);
-    transform: translateX(-50%);
+    transform: translateX(-35%);
     width: 17rem;
     height: 0.2rem;
     background: url('../../img/line.png') 0 0 no-repeat;
     background-color: #f7f7f7;
+    margin-bottom: 4rem;
+}
+
+.decoration {
+    transform: translate(0px, 0);
+    opacity: 1;
+    transition: all 1.2s ease 0.2s;
+
+
+}
+
+.decoration.active {
+    transform: translate(0px, 0px);
+    opacity: 1;
 }

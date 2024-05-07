@@ -6,7 +6,7 @@ import CloseButton from 'react-bootstrap/CloseButton';
 
 const Modal = ({children, open, setOpen}) => {
 
-    if(!open) return null;
+    if(!open) return '';
 
     return(
         <>

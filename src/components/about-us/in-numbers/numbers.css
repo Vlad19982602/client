@@ -1,0 +1,31 @@
+.numbers {
+    padding-top: 105px;
+}
+
+
+.tn-atom {
+    background-color: #dfe1e3;
+    background-position: center center;
+    border-color: transparent;
+    border-style: solid;
+}
+.green {
+    background-color: #76b82a;
+    height: 3px;
+    opacity: 1;
+    width: 88%;
+    background-position: center center;
+    border-color: transparent;
+    border-style: solid;
+}
+
+.numbers__wrapper {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+
+.numbers__padding {
+    padding-top: 50px;
+}

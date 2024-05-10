@@ -1,0 +1,36 @@
+.main-ex {
+    height: 522.4px;
+    background: -webkit-linear-gradient(top, rgb(37, 44, 53), rgba(72, 83, 88, 0.7)), url('../../../img/bg/samuelzeller111218.jpg') center center/cover no-repeat;
+}
+
+.t-container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-width: 1200px;
+    padding: 0;
+}
+
+.main-ex__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding-top: 42px;
+    padding-bottom: 42px;
+}
+
+.main-ex__wrapper strong {
+    font-weight: 700;
+    font-size: 42px;
+    padding: 24px 0 38px 0;
+    letter-spacing: .5px;
+    color: #fff;
+}
+
+.main-ex__text {
+    padding: 0 0 30px 0;
+    color: #fff;
+    font-size: 24px;
+}

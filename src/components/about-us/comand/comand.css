@@ -1,0 +1,52 @@
+.comand {
+    padding-top: 70px;
+    padding-bottom: 70px;
+    background: #1a1313;
+    margin-top: 100px;
+    min-height: 700px;
+}
+
+.comand__wrapper {
+    background: #fff;
+    width: 260px;
+    height: 400px;
+}
+
+.row .comand__wrapper {
+    padding: 0;
+}
+
+.comand__wrapper img {
+    height: 100%;
+    width: 100%;
+}
+
+.comand__lines {
+    display: flex;
+    column-gap: 50px;
+    margin-bottom: 5%;
+}
+
+.comand__img {
+    height: 320px;
+    overflow: hidden;
+}
+
+.comand__name {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 17px;
+    font-size: 20px;
+    font-weight: 700;
+    color: #1a1313;
+    margin-top: 10px;
+}
+
+.comand__position {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 17px;
+    font-size: 12px;
+    line-height: 1.55;
+    color: #757575;
+}

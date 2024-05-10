@@ -1,0 +1,35 @@
+.footer {
+  padding: 4rem 0;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(72, 83, 88, 0.6),
+    rgba(37, 44, 53, 1)
+  );
+}
+
+.t-descr {
+  font-family: "Ubuntu", Arial, sans-serif;
+  font-weight: 400;
+  color: #252c35;
+}
+
+.footer_a {
+  transition: all 1.2s;
+  width: 105px;
+}
+.footer_a:hover {
+  transform: scale(1.2);
+  transition: all 1.2s;
+}
+.footer_a a {
+  text-decoration: none;
+}
+
+.t-descr_xxs {
+  font-size: 16px;
+  line-height: 1.55;
+}
+
+.footer__floatbeaker_lr3 {
+  display: none;
+}

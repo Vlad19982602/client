@@ -1,0 +1,50 @@
+.customers {
+    min-height: 200px;
+    padding: 10px 15px;
+}
+
+.custom-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.customers__item {
+    position: relative;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+
+.customers__item_6-in-row {
+    width: 16.666%;
+}
+
+.customers__line_vertical {
+    width: 1px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.customers .t-card__col {
+    width: 100%;
+}
+
+.customers__greyonhovercolor {
+    filter: grayscale(100%);
+    filter: gray;
+}
+.customers__greyonhovercolor:hover {
+    filter: grayscale(0%);
+    filter: none
+}
+
+.customers__img {
+    max-width: 100%;
+    width: 100%;
+    margin: 0 auto;
+}

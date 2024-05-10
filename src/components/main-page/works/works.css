@@ -1,0 +1,50 @@
+.works {
+    padding: 5rem 0;
+}
+
+.works__wrapper {
+    display: contents;
+    margin-bottom: 10px;
+}
+
+.works a img {
+    margin-bottom: 3rem;
+    border-radius: 15px;
+    width: 270px;
+    height: 270px;
+}
+
+.works__textwrapper {
+    margin-bottom: 6px;
+    margin-top: 6px;
+}
+.works__uptitle {
+    margin-bottom: 4px;
+    margin-top: 4px;
+    color: #777;
+}
+.t-uptitle {
+    font-family: 'Ubuntu', Arial, sans-serif;
+    font-weight: 700;
+    color: #252c35;
+    letter-spacing: 2.5px;
+}
+.works__title {
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+.works__descr {
+    color: #777;
+    font-size: 12px;
+}
+
+.t-descr {
+    font-family: 'Ubuntu', Arial, sans-serif;
+    font-weight: 400;
+    color: #252c35;
+}
+
+.works a {
+    text-decoration: none;
+    color: #252c35;
+}

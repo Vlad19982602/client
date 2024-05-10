@@ -1,0 +1,20 @@
+.contacts .row {
+    display: flex;
+    justify-content: center;
+}
+
+.contacts__iframe {
+    width: 700px;
+    height: 450px;
+    border: 0;
+    
+}
+
+.contacts_info h3 {
+    font-weight: 700;
+}
+
+.contacts_info a {
+    color: rgb(7, 192, 100);
+    text-decoration: none;
+}

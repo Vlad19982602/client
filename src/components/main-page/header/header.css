@@ -1,0 +1,40 @@
+.header {
+  padding: 0 0 0 0;
+  background-color: #f8f9fa;
+  border-color: #f8f9fa;
+}
+
+nav.header__menu {
+  width: 100%;
+  padding: 15px 20px;
+  text-align: center;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0);
+}
+
+.header__menu ul {
+  padding-left: 0;
+}
+
+.header__menu .dropdown {
+  margin-left: 10px;
+}
+
+.header__menu ul {
+  display: inline-flex;
+}
+
+.header__menu-item {
+  position: relative;
+  clear: both;
+  font-size: 16px;
+  padding: 7px 15px;
+  margin: 0;
+  white-space: nowrap;
+  color: #252c35;
+  font-family: "Ubuntu", Arial, sans-serif;
+}
+
+a.header__menu__link-item {
+  color: #000000;
+  text-decoration: none;
+}

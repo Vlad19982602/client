@@ -11,3 +11,72 @@ body {
     margin: 0 auto;
     padding: 0 30px;
 }
+
+.container-ex {
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+.tn-atom {
+    background-color: #dfe1e3;
+    background-position: center center;
+    border-color: transparent;
+    border-style: solid;
+}
+.green {
+    background-color: #76b82a;
+    height: 3px;
+    opacity: 1;
+    width: 88%;
+    background-position: center center;
+    border-color: transparent;
+    border-style: solid;
+}
+
+.title {
+    color: #252c35;
+    font-size: 36px;
+    font-family: 'Ubuntu', Arial, sans-serif;
+    line-height: 1;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    background-position: center center;
+    border-color: transparent;
+    border-style: solid;
+}
+.title-wh {
+    color: #ffffff;
+    font-size: 36px;
+    font-family: 'Ubuntu', Arial, sans-serif;
+    line-height: 1;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    background-position: center center;
+    border-color: transparent;
+    border-style: solid;
+}
+
+.subtitle {
+    color: #252c35;
+    font-size: 20px;
+    font-family: 'Open Sans', Arial, sans-serif;
+    line-height: 1.55;
+    font-weight: 400;
+    background-position: center center;
+    border-color: transparent;
+    border-style: solid;
+    margin-top: 12px;
+}
+.subtitle-wh {
+    color: #ffffff;
+    font-size: 20px;
+    font-family: 'Open Sans', Arial, sans-serif;
+    line-height: 1.55;
+    font-weight: 400;
+    background-position: center center;
+    border-color: transparent;
+    border-style: solid;
+    margin-top: 12px;
+    margin-bottom: 50px;
+}

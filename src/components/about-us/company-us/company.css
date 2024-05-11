@@ -3,13 +3,6 @@
     background: -webkit-linear-gradient(top, rgb(37, 44, 53), rgba(72, 83, 88, 0.7)), url('../../../img/bg/samuelzeller111218.jpg') center center/cover no-repeat;
 }
 
-.t-container {
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
-    max-width: 1200px;
-    padding: 0;
-}
 
 .main-ex__wrapper {
     display: flex;

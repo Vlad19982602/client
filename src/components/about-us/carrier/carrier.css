@@ -1,0 +1,23 @@
+.carrier {
+    height: 1320px;
+    background-position: center center;
+    background-attachment: scroll;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 70px;
+}
+
+.d-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 435px);
+    grid-template-rows: 500px 300px;
+    column-gap: 30px;
+    row-gap: 30px;
+    justify-content: center;
+    
+}
+
+.d-item {
+    grid-column: 1/3;
+}
+

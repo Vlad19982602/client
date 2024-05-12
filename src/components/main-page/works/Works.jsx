@@ -1,22 +1,22 @@
 import "./works.css";
 
-import firstImg from "../../../img/works/img/1-1.webp";
-import firstBigImg from "../../../img/works/bigImg/1-1.jpg";
-import secondImg from "../../../img/works/img/2-2.webp";
-import secondBigImg from "../../../img/works/bigImg/2-2.jpg";
-import thirdImg from "../../../img/works/img/3-3s.jpg";
-import thirdBigImg from "../../../img/works/bigImg/3-3.jpg";
-import fourImg from "../../../img/works/img/4-4.webp";
-import fourBigImg from "../../../img/works/bigImg/4-4.jpg";
+import firstImg from "./works/img/1-1.webp";
+import firstBigImg from "./works/bigImg/1-1.jpg";
+import secondImg from "./works/img/2-2.webp";
+import secondBigImg from "./works/bigImg/2-2.jpg";
+import thirdImg from "./works/img/3-3s.jpg";
+import thirdBigImg from "./works/bigImg/3-3.jpg";
+import fourImg from "./works/img/4-4.webp";
+import fourBigImg from "./works/bigImg/4-4.jpg";
 
-import fiveImg from "../../../img/works/img/5-5s.jpg";
-import fiveBigImg from "../../../img/works/bigImg/5-5.jpg";
-import sixImg from "../../../img/works/img/6-6s.jpg";
-import sixBigImg from "../../../img/works/bigImg/6-6.jpg";
-import sevenImg from "../../../img/works/img/7-7s.jpg";
-import sevenBigImg from "../../../img/works/bigImg/7-7.jpg";
-import eightImg from "../../../img/works/img/8-8s.jpg";
-import eightBigImg from "../../../img/works/bigImg/8-8.jpg";
+import fiveImg from "./works/img/5-5s.jpg";
+import fiveBigImg from "./works/bigImg/5-5.jpg";
+import sixImg from "./works/img/6-6s.jpg";
+import sixBigImg from "./works/bigImg/6-6.jpg";
+import sevenImg from "./works/img/7-7s.jpg";
+import sevenBigImg from "./works/bigImg/7-7.jpg";
+import eightImg from "./works/img/8-8s.jpg";
+import eightBigImg from "./works/bigImg/8-8.jpg";
 
 const Works = () => {
   return (

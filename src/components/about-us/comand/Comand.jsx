@@ -1,16 +1,16 @@
 import './comand.css'
 
-import Dir from "../../../img/comand/Dir.png"
-import Prorab from "../../../img/comand/Prorab.png"
-import Avtomatika from "../../../img/comand/Avtomatika.png"
-import Helper from "../../../img/comand/Helper.png"
-import MainHelper from "../../../img/comand/MainHelper.png"
-import Manager from "../../../img/comand/Manager.png"
-import Engineer from "../../../img/comand/Engineer-one.png"
-import EngineerTwo from "../../../img/comand/Engineer-two.png"
-import EngineerVent from "../../../img/comand/EngineerVent.png"
-import pto from "../../../img/comand/pto.png"
-import Buhgalter from "../../../img/comand/Buhgalter.png"
+import Dir from "./comand/Dir.png"
+import Prorab from "./comand/Prorab.png"
+import Avtomatika from "./comand/Avtomatika.png"
+import Helper from "./comand/Helper.png"
+import MainHelper from "./comand/MainHelper.png"
+import Manager from "./comand/Manager.png"
+import Engineer from "./comand/Engineer-one.png"
+import EngineerTwo from "./comand/Engineer-two.png"
+import EngineerVent from "./comand/EngineerVent.png"
+import pto from "./comand/pto.png"
+import Buhgalter from "./comand/Buhgalter.png"
 
 
 const Comand = () => {
@@ -183,7 +183,7 @@ const Comand = () => {
                                 </div>
                             </div>
                         </div>
-                                                <div className='col-lg-3 col-md-3 col-sm-6 col-xs-12'>
+                        <div className='col-lg-3 col-md-3 col-sm-6 col-xs-12'>
                             <div className='row'>
                                 <div className='comand__wrapper'>
                                     <div className='comand__img'>

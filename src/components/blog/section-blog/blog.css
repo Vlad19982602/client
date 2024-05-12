@@ -1,0 +1,51 @@
+.blog-ex {
+    height: 522.4px;
+    background: -webkit-linear-gradient(top, rgb(37, 44, 53), rgba(72, 83, 88, 0.7)), url('https://optim.tildacdn.com/tild6665-6136-4138-a463-343633363432/-/format/webp/breather-187923-unsp.jpg') center center/cover no-repeat;
+}
+
+.blog-ex__wrapper {
+    display: flex;
+    text-align: center;
+    padding-top: 42px;
+    padding-bottom: 42px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.blog-ex__wrapper strong {
+    margin-top: 60px;
+    font-weight: 700;
+    font-size: 72px;
+    padding: 24px 0 38px 0;
+    letter-spacing: .5px;
+    color: #fff;
+}
+
+.blog-ex__items {
+    width: 50%;
+    height: 50px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.blog-ex__input {
+    width: 25%;
+    position: relative;
+    vertical-align: middle;
+    width: 50%;
+    height: 100%;
+    padding-right: 20px;
+}
+.blog__btn {
+    width: 25%;
+    position: relative;
+    vertical-align: middle;
+    width: 50%;
+    height: 100%;
+    padding-right: 20px;
+}

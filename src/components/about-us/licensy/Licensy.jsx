@@ -1,7 +1,7 @@
 import './licensy.css'
 
-import UralSibir from "../../../img/licensy/UralSibir.jpg"
-import licenziya from "../../../img/licensy/licenziya.jpg"  
+import UralSibir from "./licensy/UralSibir.jpg"
+import licenziya from "./licensy/licenziya.jpg"  
 
 const Licensy = () => {
     return (

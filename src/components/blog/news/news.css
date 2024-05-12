@@ -1,0 +1,28 @@
+.news {
+    padding-top: 90px;
+    padding-bottom: 75px;
+}
+
+
+
+
+
+.news__card-title {
+    margin-top: 10px;
+    text-transform: uppercase;
+}
+.news__card-sub {
+    font-size: 24px;
+    line-height: 1.23;
+    font-family: 'Ubuntu', Arial, sans-serif;
+    font-weight: 700;
+    color: #252c35;
+    margin-bottom: 12px;
+}
+.news__card-subtext {
+    font-size: 14px;
+    line-height: 1.55;
+    font-family: 'Ubuntu', Arial, sans-serif;
+    font-weight: 400;
+    color: #777;
+}

@@ -16,7 +16,7 @@
     transform: translateX(-35%);
     width: 17rem;
     height: 0.2rem;
-    background: url('../../../img/line.png') 0 0 no-repeat;
+    background: url('./line.png') 0 0 no-repeat;
     background-color: #f7f7f7;
     margin-bottom: 4rem;
 }

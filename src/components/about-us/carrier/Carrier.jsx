@@ -1,9 +1,9 @@
 import './carrier.css'
 
-import gridOne from "../../../img/grid/grid-1.jpg";
-import gridTwo from "../../../img/grid/grid-2.jpeg";
-import gridThree from "../../../img/grid/grid-3.jpg";
-import gridFour from "../../../img/grid/grid-4.jpg";
+import gridOne from "./grid/grid-1.jpg";
+import gridTwo from "./grid/grid-2.jpeg";
+import gridThree from "./grid/grid-3.jpg";
+import gridFour from "./grid/grid-4.jpg";
 
 const Carrier = () => {
     return (

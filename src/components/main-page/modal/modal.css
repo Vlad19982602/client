@@ -54,7 +54,7 @@
 }
 .modal__image-pic {
     width: 70px;
-    background: url('../../../img/noroot.png') center center/cover no-repeat;
+    background: url('./noroot.png') center center/cover no-repeat;
 }
 
 .modal__text-wrapper {

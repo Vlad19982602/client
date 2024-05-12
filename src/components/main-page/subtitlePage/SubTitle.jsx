@@ -1,5 +1,5 @@
-import logoImg from '../../../img/Airmaster_logo_horiz.png'
-import phone from '../../../img/phone.png'
+import logoImg from './Airmaster_logo_horiz.png'
+import phone from './phone.png'
 import './subTitle.css'
 import Button from 'react-bootstrap/Button';
 import Nav from 'react-bootstrap/Nav';

@@ -62,7 +62,7 @@ function Header() {
                 </Dropdown.Menu>
               </Dropdown>
               <li className="header__menu-item">
-                <a className="header__menu__link-item" href="/kak_rabotaem">
+                <a className="header__menu__link-item" href="/how-work">
                   Как работаем
                 </a>
               </li>

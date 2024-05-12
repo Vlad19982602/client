@@ -91,42 +91,42 @@
     flex-direction: column;
     width: 100%;
     height: 100%;
-    background: -webkit-linear-gradient(top, rgba(72,83,88,0.50), rgba(37,44,53,0.90)), url('../../../img/house.jpg') center center/cover no-repeat;
+    background: -webkit-linear-gradient(top, rgba(72,83,88,0.50), rgba(37,44,53,0.90)), url('./house.jpg') center center/cover no-repeat;
 }
 .slider__content .slider__cell-2 {
     display: flex;
     flex-direction: column;
     width: 100%;
     height: 100%;
-    background: -webkit-linear-gradient(top, rgba(72,83,88,0.50), rgba(37,44,53,0.90)), url('../../../img/pool.jpeg') center center/cover no-repeat;
+    background: -webkit-linear-gradient(top, rgba(72,83,88,0.50), rgba(37,44,53,0.90)), url('./pool.jpeg') center center/cover no-repeat;
 }
 .slider__content .slider__cell-3 {
     display: flex;
     flex-direction: column;
     width: 100%;
     height: 100%;
-    background: -webkit-linear-gradient(top, rgba(72,83,88,0.50), rgba(37,44,53,0.90)), url('../../../img/production.jpg') center center/cover no-repeat;
+    background: -webkit-linear-gradient(top, rgba(72,83,88,0.50), rgba(37,44,53,0.90)), url('./production.jpg') center center/cover no-repeat;
 }
 .slider__content .slider__cell-4 {
     display: flex;
     flex-direction: column;
     width: 100%;
     height: 100%;
-    background: -webkit-linear-gradient(top, rgba(72,83,88,0.50), rgba(37,44,53,0.90)), url('../../../img/aspiration.jpg') center center/cover no-repeat;
+    background: -webkit-linear-gradient(top, rgba(72,83,88,0.50), rgba(37,44,53,0.90)), url('./aspiration.jpg') center center/cover no-repeat;
 }
 .slider__content .slider__cell-5 {
     display: flex;
     flex-direction: column;
     width: 100%;
     height: 100%;
-    background: -webkit-linear-gradient(top, rgba(72,83,88,0.50), rgba(37,44,53,0.90)), url('../../../img/office.jpg') center center/cover no-repeat;
+    background: -webkit-linear-gradient(top, rgba(72,83,88,0.50), rgba(37,44,53,0.90)), url('./office.jpg') center center/cover no-repeat;
 }
 .slider__content .slider__cell-6 {
     display: flex;
     flex-direction: column;
     width: 100%;
     height: 100%;
-    background: -webkit-linear-gradient(top, rgba(72,83,88,0.50), rgba(37,44,53,0.90)), url('../../../img/bar.jpg') center center/cover no-repeat;
+    background: -webkit-linear-gradient(top, rgba(72,83,88,0.50), rgba(37,44,53,0.90)), url('./bar.jpg') center center/cover no-repeat;
 }
 
 .slider__content .slider__bg {

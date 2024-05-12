@@ -12,12 +12,9 @@ import Contacts from "../components/main-page/contacts/Contacts";
 
 import Decoration from "../components/main-page/decoration/Decoration";
 
-import Scroll from "../components/scroll";
-
 const Home = () => {
     return (
         <>
-            <Scroll />
             <Main />
             <Calculator />
             <Decoration title={"РАБОТАЕМ С ОБЪЕКТАМИ ЛЮБОЙ СЛОЖНОСТИ"} />
@@ -28,13 +25,13 @@ const Home = () => {
             <Decoration title={"ВИДЫ УСЛУГ"} />
             <Services />
             <ServicesMore />
+            <Decoration title={"КАК НАС НАЙТИ"} />
+            <Contacts />
+            <Calculator />
             <Decoration title={"ГЕОГРАФИЯ ОБЪЕКТОВ"} />
             <Geographics />
             <Decoration title={"НАШИ ЗАКАЗЧИКИ"} />
             <Customers />
-            <Decoration title={"КАК НАС НАЙТИ"} />
-            <Contacts />
-            <Calculator />
         </>
       );
 }

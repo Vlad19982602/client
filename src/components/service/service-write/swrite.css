@@ -1,0 +1,19 @@
+.swrite {
+    padding-top: 110px;
+}
+
+.swrite__item {
+    display: flex;
+    margin-top: 24px;
+}
+
+.swrite__wrapper {
+    margin-left: 20px;
+}
+
+.swrite__img {
+    width: 50px;
+}
+.swrite__three {
+    width: 70px;
+}

@@ -1,0 +1,117 @@
+.pservice {
+    padding-top: 150px;
+    padding-bottom: 105px;
+}
+
+.pservice__flex {
+    display: flex;
+    gap: 30px;
+}
+
+.pservice__item-1 {
+    background: -webkit-linear-gradient(top, rgb(37, 44, 53, 1), rgba(72, 83, 88, 0.5)), url('./cond.jpg') center center/cover no-repeat;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    height: 400px;
+}
+
+.pservice__item-2 {
+    background: -webkit-linear-gradient(top, rgb(37, 44, 53, 1), rgba(72, 83, 88, 0.5)), url('./wooden.jpg') center center/cover no-repeat;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    height: 400px;
+}
+
+.pservice__item-3 {
+    background: -webkit-linear-gradient(top, rgb(37, 44, 53, 1), rgba(72, 83, 88, 0.5)), url('./smoke.jpg') center center/cover no-repeat;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    height: 400px;
+}
+
+.pservice__item-4 {
+    background: -webkit-linear-gradient(top, rgb(37, 44, 53, 1), rgba(72, 83, 88, 0.5)), url('./prom.jpg') center center/cover no-repeat;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    height: 400px;
+}
+
+.pservice__item-5 {
+    background: -webkit-linear-gradient(top, rgb(37, 44, 53, 1), rgba(72, 83, 88, 0.5)), url('./prof.jpg') center center/cover no-repeat;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    height: 400px;
+}
+
+.pservice__item-6 {
+    background: -webkit-linear-gradient(top, rgb(37, 44, 53, 1), rgba(72, 83, 88, 0.5)), url('./pixel.jpg') center center/cover no-repeat;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    height: 400px;
+}
+
+.pservice__item-7 {
+    background: -webkit-linear-gradient(top, rgb(37, 44, 53, 1), rgba(72, 83, 88, 0.5)), url('./fit.jpg') center center/cover no-repeat;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    height: 400px;
+}
+
+.pservice__item-8 {
+    background: -webkit-linear-gradient(top, rgb(37, 44, 53, 1), rgba(72, 83, 88, 0.5)), url('./prom.jpg') center center/cover no-repeat;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    height: 400px;
+}
+
+.pservice__item:hover {
+    /* opacity: .8; */
+    transition: all ease-in-out .25s;
+    /* background-image: -webkit-linear-gradient(top, rgba(37, 44, 53, 1), rgba(72, 83, 88, 0.5)); */
+}
+
+.pservive__content {
+    color: #fff;
+    position: relative;
+    padding: 20px 40px;
+    margin: 30px auto;
+}
+
+.pservice__title {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    line-height: 1.35;
+}

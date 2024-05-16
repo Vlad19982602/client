@@ -1,0 +1,56 @@
+.who {
+    padding-top: 105px;
+    padding-bottom: 60px;
+
+}
+
+.who__title {
+    font-size: 62px;
+    text-align: left;
+    font-weight: 700;
+}
+
+.who_list {
+    padding-left: 20px;
+    margin-top: 20px;
+}
+
+.who__item {
+    margin-top: 5px;
+    font-size: 20px;
+    list-style: circle;
+}
+
+.who__text {
+    font-size: 26px;
+    font-weight: 700;
+    text-align: left;
+    margin-top: 60px;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+.who__mail {
+    margin-top: 20px;
+}
+.who__mail-link {
+    font-size: 52px;
+    text-decoration: none;
+    color: #76b82a;
+}
+
+.who__card {
+    width: 30rem;
+    height: 16rem;
+    padding: 25px;
+}
+
+.who__card-mail {
+    margin-top: 30px;
+    font-size: 16px;
+}
+
+.who__card-text {
+    margin-top: 30px;
+    font-size: 20px;
+}

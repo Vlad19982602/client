@@ -24,7 +24,7 @@ function Header() {
                 </Dropdown.Toggle>
 
                 <Dropdown.Menu>
-                  <Dropdown.Item href="https://www.airmaster74.ru/proizvodstvo">
+                  <Dropdown.Item href="/vent-prom">
                     Вентиляция на производстве
                   </Dropdown.Item>
                   <Dropdown.Item href="https://www.airmaster74.ru/dom">
@@ -33,7 +33,7 @@ function Header() {
                   <Dropdown.Item href="https://www.airmaster74.ru/basseyn_chastnyy">
                     Вентиляция в частном бассейне
                   </Dropdown.Item>
-                  <Dropdown.Item href="https://www.airmaster74.ru/restoran_kafe_bar">
+                  <Dropdown.Item href="/groceries">
                     Вентиляция в кафе, ресторане, баре
                   </Dropdown.Item>
                 </Dropdown.Menu>

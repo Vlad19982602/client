@@ -1,0 +1,20 @@
+.smain {
+    height: 417.4px;
+    background: -webkit-linear-gradient(top, rgb(37, 44, 53), rgba(72, 83, 88, 0.7)), url('./bg_offer.jpg') center center/cover no-repeat;
+}
+
+.smain__title {
+    display: flex;
+    padding-top: 142px;
+    padding-bottom: 42px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    height: 100%;
+}
+
+.smain__title strong {
+    font-size: 72px;
+    font-weight: 700;
+    color: #fff;
+}

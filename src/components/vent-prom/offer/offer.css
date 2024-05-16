@@ -1,0 +1,45 @@
+.offer {
+    padding-top: 105px;
+}
+
+
+.offer__title {
+    font-weight: 700;
+    font-size: 42px;
+}
+
+.offer__question {
+    font-size: 40px;
+    margin-top: 90px;
+    margin-bottom: 90px;
+}
+
+.offer__wrapper {
+    display: flex;
+    gap: 30px;
+}
+
+.offer__img {
+    height: auto;
+    max-width: 50px;
+    margin-bottom: 25px;
+}
+
+.offer__box {
+    height: 28%;
+}
+
+.offer_descr {
+    text-align: left;
+    font-weight: 700;
+    margin-top: 12px;
+    margin-bottom: 25px;
+    font-size: 28px;
+    line-height: 1.17;
+}
+
+.offer__text {
+    margin-top: 20px;
+    font-size: 14px;
+    text-align: left;
+}

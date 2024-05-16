@@ -194,6 +194,7 @@
 
 .slider__content .t-card__link {
     display: block;
+    text-decoration: none;
 }
 .slider__content .slider__animation_fast {
     transition: all ease-in-out .25s;

@@ -1,0 +1,25 @@
+.question {
+    padding-top: 160px;
+    padding-bottom: 150px;
+    background: #485358;
+}
+
+.question  h1 {
+    display: block;
+    text-align: center;
+    font-size: 46px;
+    color: #fff;
+}
+
+.question svg {
+    position: absolute;
+    left: 26%;
+    transform: scaleX(-1);
+    transform-origin: right;
+    width: 45px;
+}
+
+.question__btn {
+    margin-top: 35px;
+    padding: 15px;
+}

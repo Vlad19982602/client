@@ -1,0 +1,53 @@
+.req {
+    padding-top: 105px;
+}
+
+.req-content strong {
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 1.23;
+}
+.req-header {
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 100%;
+    margin-top: 5px;
+}
+
+.req-btn {
+    position: relative;
+    width: 100%;
+    padding: 25px 30px;
+    text-align: left;
+    background-color: transparent;
+    border: none;
+    box-sizing: border-box;
+    cursor: pointer;
+    background: #343232;
+}
+
+.req-title strong {
+    color: #ffffff;
+    font-size: 16px;
+    padding-right: 30px;
+}
+
+.req-icon {
+    position: absolute;
+    top: 50%;
+    right: 18px;
+    width: 50px;
+    height: 36px;
+    padding: 8px;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    color: #fff;
+}
+
+.req-icon svg:hover {
+    position: absolute;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    background-color: #76b82a;
+}

@@ -32,7 +32,7 @@ const Footer = () => {
                 <br />
                 <div className="footer_a">
                   <a
-                    href="https://www.airmaster74.ru/home"
+                    href="/"
                     style={{ color: "#ffffff" }}
                   >
                     Главная
@@ -42,7 +42,7 @@ const Footer = () => {
                 <br />
                 <div className="footer_a">
                   <a
-                    href="https://www.airmaster74.ru/komanda"
+                    href="/about-us"
                     style={{ color: "#ffffff" }}
                   >
                     О нас
@@ -59,7 +59,7 @@ const Footer = () => {
                   <br />
                   <div className="footer_a">
                     <a
-                      href="https://www.airmaster74.ru/uslugi"
+                      href="/service"
                       style={{ color: "#fff" }}
                     >
                       Услуги
@@ -69,7 +69,7 @@ const Footer = () => {
                   <br />
                   <div className="footer_a">
                     <a
-                      href="https://www.airmaster74.ru/portfolio"
+                      href="/portfolio"
                       style={{ color: "#fff" }}
                     >
                       Портфолио
@@ -86,7 +86,7 @@ const Footer = () => {
                   <br />
                   <div className="footer_a">
                     <a
-                      href="https://www.airmaster74.ru/kak_rabotaem"
+                      href="/how-work"
                       style={{ color: "#fff" }}
                     >
                       Как работаем
@@ -96,7 +96,7 @@ const Footer = () => {
                   <br />
                   <div className="footer_a">
                     <a
-                      href="https://www.airmaster74.ru/kontakty"
+                      href="/contact"
                       style={{ color: "#fff" }}
                     >
                       Контакты

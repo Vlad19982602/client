@@ -1,0 +1,31 @@
+.search {
+    position: relative;
+    background: -webkit-linear-gradient(top, rgb(37, 44, 53), rgba(72, 83, 88, 0.7)), url('../../main-page/main/bg/bg_calculator.jpg') center center/cover no-repeat;
+    height: 535px;
+}
+
+
+
+.search__wrapper h1 {
+    font-size: 72px;
+    padding-top: 120px;
+    color: #fff;
+}
+
+.search__list {
+    margin-bottom: 50px;
+    color: #fff;
+    padding-left: 0;
+}
+.search__item {
+    font-size: 30px;
+    line-height: 72px;
+}
+
+.search__btn {
+    position: relative;
+    vertical-align: middle;
+    width: 25%;
+    height: 100%;
+    padding-right: 20px;
+}

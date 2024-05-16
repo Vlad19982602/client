@@ -1,0 +1,18 @@
+.gmain {
+    height: 546px;
+        background: -webkit-linear-gradient(top, rgb(37, 44, 53), rgba(72, 83, 88, 0.7)), url('./gmain.jpg') center center/cover no-repeat;
+}
+
+.gmain__title {
+    font-size: 72px;
+    font-weight: 700;
+    color: #fff;
+    padding-top: 65px;
+    text-transform: uppercase;
+}
+
+.gmain__text {
+    margin-top: 25px;
+    font-size: 26px;
+    color: #fff;
+}

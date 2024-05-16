@@ -1,120 +1,108 @@
-import Calculator from './components/calculator/Claculator';
-import Decoration from './components/decoration/Decoration';
-import Header from './components/header/Header';
-import Main from './components/main/Main';
-import Modal from './components/modal/Modal';
-import Slider from './components/slider/Slider';
-import SliderContent from './components/slider/SliderContent';
-import Services from './components/services/Services';
-import ServicesMore from './components/services/ServicesMore';
-import Geographics from './components/geographics/Geographics';
-import SubTitle from './components/subtitlePage/SubTitle';
-import GoTop from './components/topButton/GoTop';
-import Customers from './components/customers/Customers';
-import Contacts from './components/contacts/Contacts';
+import Header from "./components/main-page/header/Header";
+import Modal from "./components/main-page/modal/Modal";
+import SubTitle from "./components/main-page/subtitlePage/SubTitle";
+import Footer from "./components/main-page/footer/Footer";
+
+import Scroll from "./components/scroll";
+
+import Home from "./pages/Home";
+import WeAll from "./pages/WeAll";
+import HowWorked from "./pages/HowWorked";
+import Contactes from "./pages/Contactes";
+import Blogs from "./pages/Blogs";
+import JobOpening from "./pages/JobOpening";
+
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
+import { useState } from "react";
+
+import VentProm from "./pages/VentProm";
+import Groceries from "./pages/Groceries";
 
 
-import { useEffect, useState, useRef } from 'react';
+import Service from "./pages/Service";
+import Portfolio from "./pages/Portfolio";
 
 function App() {
-
   const [open, setOpen] = useState(true);
 
   const handleOpenModal = () => {
-    if(!open) {
+    if (!open) {
       setTimeout(() => {
-        setOpen(true);
+        open(true);
       }, 6000);
     }
   };
 
-  const [scrollPosition, setSrollPosition] = useState(0);
-  const [showGoTop, setshowGoTop] = useState("goTopHidden");
-  const refScrollUp = useRef();
 
-  useEffect(() => {
-    window.addEventListener("scroll", handleVisibleButton);
-  });
-
-  function handleVisibleButton() {
-    const position = window.scrollY;
-    setSrollPosition(position);
-
-    if (scrollPosition > 400) {
-      return setshowGoTop("goTop");
-    } else if (scrollPosition < 400) {
-      return setshowGoTop("goTopHidden");
-    }
-  }
-
-  const handleScrollUp = () => {
-    refScrollUp.current.scrollIntoView({ behavior: "smooth" });
-  };
 
   // const [anim, setAnim] = useState(true);
 
-//   const animation = () => {
-//     const animItems = document.querySelectorAll('._anim-items');
+  //   const animation = () => {
+  //     const animItems = document.querySelectorAll('._anim-items');
 
-//     if(animItems.length > 0) {
-//         window.addEventListener('scroll', animOnScroll);
-//         function animOnScroll() {
-//             for(let index = 0; index< animItems.length; index++) {
-//                 const animItem = animItems[index];
-//                 const animItemHeight = animItem.offsetHeight;
-//                 const animItemOffset = offset(animItem).top;
-//                 const animStart = 4;
+  //     if(animItems.length > 0) {
+  //         window.addEventListener('scroll', animOnScroll);
+  //         function animOnScroll() {
+  //             for(let index = 0; index< animItems.length; index++) {
+  //                 const animItem = animItems[index];
+  //                 const animItemHeight = animItem.offsetHeight;
+  //                 const animItemOffset = offset(animItem).top;
+  //                 const animStart = 4;
 
-//                 let animItemPoint = window.innerHeight - animItemHeight / animStart;
-//                 if(animItemHeight > window.innerHeight) {
-//                     animItemPoint = window.innerHeight - window.innerHeight / animStart;
-//                 }
+  //                 let animItemPoint = window.innerHeight - animItemHeight / animStart;
+  //                 if(animItemHeight > window.innerHeight) {
+  //                     animItemPoint = window.innerHeight - window.innerHeight / animStart;
+  //                 }
 
-//                 if((window.scrollY > animItemOffset - animItemPoint) && window.scrollY < (animItemOffset + animItemHeight )) {
-//                     animItem.classList.add('active');
-//                 } else {
-//                     if(!animItem.classList.contains('_anim-no-hide')) {
-//                         animItem.classList.remove('active');
-//                     }
-//                 }
-//             }
-//         }
+  //                 if((window.scrollY > animItemOffset - animItemPoint) && window.scrollY < (animItemOffset + animItemHeight )) {
+  //                     animItem.classList.add('active');
+  //                 } else {
+  //                     if(!animItem.classList.contains('_anim-no-hide')) {
+  //                         animItem.classList.remove('active');
+  //                     }
+  //                 }
+  //             }
+  //         }
 
-//         function offset(el) {
-//             const rect = el.getBoundingClientRect(),
-//                 scrollLeft = window.scrollX || document.documentElement.scrollLeft,
-//                 scrollTop = window.scrollY || document.documentElement.scrollTop;
-//             return { top: rect.top + scrollTop, left: rect.left + scrollLeft }
-//         }
-        
-//         animOnScroll();
-//     }
-// }
+  //         function offset(el) {
+  //             const rect = el.getBoundingClientRect(),
+  //                 scrollLeft = window.scrollX || document.documentElement.scrollLeft,
+  //                 scrollTop = window.scrollY || document.documentElement.scrollTop;
+  //             return { top: rect.top + scrollTop, left: rect.left + scrollLeft }
+  //         }
 
+  //         animOnScroll();
+  //     }
+  // }
 
   return (
-    <div className="App">  
-    {/* onAnimationEnd={animation} */}
-      <div timer={() => handleOpenModal}/> 
-      <div ref={refScrollUp}> </div>
-      <GoTop showGoTop={showGoTop} scrollUp={handleScrollUp} />
-      <Modal open={open} setOpen={setOpen}/>
-      <Header/>
-      <SubTitle/>
-      <Main/>
-      <Calculator/>
-      <Decoration title={"РАБОТАЕМ С ОБЪЕКТАМИ ЛЮБОЙ СЛОЖНОСТИ"}/>
-      <Slider/>
-      <SliderContent />
-      <Services/>
-      <Decoration title={"ВИДЫ УСЛУГ"}/>
-      <ServicesMore/>
-      <Decoration title={"ГЕОГРАФИЯ ОБЪЕКТОВ"}/>
-      <Geographics/>
-      <Decoration title={"НАШИ ЗАКАЗЧИКИ"}/>
-      <Customers/>
-      <Decoration title={"КАК НАС НАЙТИ"}/>
-      <Contacts/>
+    <div className="App">
+      <Router>
+        <Scroll />
+        <Modal open={open} setOpen={setOpen} timer={handleOpenModal} />
+        <Header />
+        <SubTitle />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about-us" element={<WeAll />} />
+          <Route path="/vent-prom" element={<VentProm />} />
+          <Route path="/groceries" element={<Groceries />} />
+
+
+          
+          <Route path="/how-work" element={<HowWorked />} />
+          <Route path="/contact" element={<Contactes />} />
+          <Route path="/blog" element={<Blogs />} />
+          <Route path="/resume" element={<JobOpening />} />
+
+          <Route path="/service" element={<Service />} />
+          <Route path="/portfolio" element={<Portfolio />} />
+        </Routes>
+        {/* <Home />         */}
+        {/* <Company /> */}
+        <Footer />
+      </Router>
     </div>
   );
 }

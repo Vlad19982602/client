@@ -1,0 +1,32 @@
+.ventmain {
+    height: 936px;
+    background: -webkit-linear-gradient(top, rgb(37, 44, 53), rgba(72, 83, 88, 0.7)), url('./mainImg/main.png') center center/cover no-repeat;
+}
+
+.ventmain__title {
+    padding-top: 126px;
+    font-weight: 700;
+    font-size: 52px;
+    letter-spacing: 1px;
+    color: #fff;
+}
+
+.ventmain__list {
+    margin-top: 115px;
+    padding: 0 0 30px 0;
+    color: #afafaf;
+}
+
+.ventmain__item {
+    font-size: 24px;
+    color: #ffffff;
+    list-style: disc;
+    line-height: 50px;
+}
+
+.ventmain__btn {
+    width: 25%;
+    height: 60px;
+    border-radius: 16px;
+    margin-top: 30px;
+}

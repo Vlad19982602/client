@@ -1,0 +1,18 @@
+.gquestion {
+    padding-top: 105px;
+    padding-bottom: 105px;
+}
+
+.gquestion__title {
+    font-weight: 700;
+    font-size: 42px;
+    margin-bottom: 80px;
+}
+
+.gquestion__descr {
+    padding-left: 40px;
+    height: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    float: left;
+}

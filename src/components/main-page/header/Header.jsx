@@ -27,11 +27,8 @@ function Header() {
                   <Dropdown.Item href="/vent-prom">
                     Вентиляция на производстве
                   </Dropdown.Item>
-                  <Dropdown.Item href="https://www.airmaster74.ru/dom">
+                  <Dropdown.Item href="/dom">
                     Вентиляция в коттедже
-                  </Dropdown.Item>
-                  <Dropdown.Item href="https://www.airmaster74.ru/basseyn_chastnyy">
-                    Вентиляция в частном бассейне
                   </Dropdown.Item>
                   <Dropdown.Item href="/groceries">
                     Вентиляция в кафе, ресторане, баре
@@ -44,19 +41,19 @@ function Header() {
                 </Dropdown.Toggle>
 
                 <Dropdown.Menu>
-                  <Dropdown.Item href="https://www.airmaster74.ru/dom_photo">
+                  <Dropdown.Item href="/private-house">
                     В частном доме
                   </Dropdown.Item>
-                  <Dropdown.Item href="https://www.airmaster74.ru/ventilyatsiya_interior_photo">
+                  <Dropdown.Item href="/inter-house">
                     Климатические системы в интерьере
                   </Dropdown.Item>
-                  <Dropdown.Item href="https://www.airmaster74.ru/na_proizvodstve_photo">
+                  <Dropdown.Item href="/prom-house">
                     На производстве
                   </Dropdown.Item>
-                  <Dropdown.Item href="https://www.airmaster74.ru/aspiration_photo">
+                  <Dropdown.Item href="/asp-house">
                     Системы аспирации
                   </Dropdown.Item>
-                  <Dropdown.Item href="https://www.airmaster74.ru/montazh_photo">
+                  <Dropdown.Item href="/job-house">
                     Монтаж вентиляции
                   </Dropdown.Item>
                 </Dropdown.Menu>

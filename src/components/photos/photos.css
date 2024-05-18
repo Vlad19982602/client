@@ -1,0 +1,15 @@
+.hphotos {
+    padding-top: 60px;
+}
+
+.house-flex img {
+    width: 300px;
+    height: 350px;
+}
+
+.house-flex {
+    display: flex;
+    column-gap: 30px;
+    justify-content: center;
+    margin-bottom: 60px;
+}

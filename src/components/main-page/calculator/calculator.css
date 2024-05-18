@@ -1,11 +1,10 @@
 .calculator {
-    background-color: #f8f9fa;
-    border-color: #f8f9fa;
+    background: #485358;
     padding: 6rem 0;
 }
 
 .calculator__title {
-    color: #000;
+    color: #fafafa;
     font-size: 36px;
     font-family: 'Ubuntu',Arial,sans-serif;
     line-height: 1.2;
@@ -19,7 +18,7 @@
 }
 
 .calculator__subtitle {
-    color: #000;
+    color: #ffffff;
     font-size: 20px;
     font-family: 'Open Sans',Arial,sans-serif;
     line-height: 1.2;
@@ -70,7 +69,7 @@
 }
 
 .calculator__descr {
-    color: #252c35;
+    color: #fff;
     font-size: 16px;
     font-family: 'Open Sans', Arial, sans-serif;
     line-height: 1.55;
@@ -81,7 +80,7 @@
 }
 .calculator__text {
     margin-top: 15px;
-    color: #252c35;
+    color: #fff;
     font-size: 20px;
     font-family: 'Open Sans', Arial, sans-serif;
     line-height: 1.55;

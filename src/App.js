@@ -22,6 +22,12 @@ import Groceries from "./pages/Groceries";
 
 import Service from "./pages/Service";
 import Portfolio from "./pages/Portfolio";
+import PrivateHouse from "./pages/PrivateHouse";
+import PromHouse from "./pages/PromHouse";
+import AspHouse from "./pages/AspHouse";
+import InterHouse from "./pages/InterHouse";
+import JobHouse from "./pages/JobHouse";
+import Dom from "./pages/Dom";
 
 function App() {
   const [open, setOpen] = useState(true);
@@ -87,7 +93,15 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about-us" element={<WeAll />} />
           <Route path="/vent-prom" element={<VentProm />} />
+          <Route path="/dom" element={<Dom />} />
           <Route path="/groceries" element={<Groceries />} />
+          
+          
+          <Route path="/private-house" element={<PrivateHouse />} />
+          <Route path="/prom-house" element={<PromHouse />} />
+          <Route path="/asp-house" element={<AspHouse />} />
+          <Route path="/inter-house" element={<InterHouse />} />
+          <Route path="/job-house" element={<JobHouse />} />
 
 
           

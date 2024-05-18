@@ -4,8 +4,14 @@
     background: #485358;
 }
 
+.question-two {
+    padding-top: 160px;
+    padding-bottom: 150px;
+}
+
 .question  h1 {
     display: block;
+    text-align-last: left;
     text-align: center;
     font-size: 46px;
     color: #fff;

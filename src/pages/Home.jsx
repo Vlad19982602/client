@@ -11,6 +11,7 @@ import Contacts from "../components/main-page/contacts/Contacts";
 
 
 import Decoration from "../components/main-page/decoration/Decoration";
+import CalculatorMore from "../components/main-page/calculator/CalculatorMore";
 
 const Home = () => {
     return (
@@ -27,7 +28,7 @@ const Home = () => {
             <ServicesMore />
             <Decoration title={"КАК НАС НАЙТИ"} />
             <Contacts />
-            <Calculator />
+            <CalculatorMore/>
             <Decoration title={"ГЕОГРАФИЯ ОБЪЕКТОВ"} />
             <Geographics />
             <Decoration title={"НАШИ ЗАКАЗЧИКИ"} />

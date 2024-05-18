@@ -33,7 +33,7 @@ const Offer = () => {
                             </div>
                             <div className='offer__text'>Наши технические специалисты помогут подобрать оборудование нужной производительности, которое будет оптимальным в плане цены и качества.</div>
                         </div>
-                                                <div className='col-md-3'>
+                        <div className='col-md-3'>
                             <div className='offer__img'>
                                 <img src={speed} alt='img1'/>
                             </div>
@@ -42,7 +42,7 @@ const Offer = () => {
                             </div>
                             <div className='offer__text'>Качественно смонтируем систему в короткие сроки. В нашем распоряжении более 5 опытных монтажных бригад, с опытом работы на производственных объектах.</div>
                         </div>
-                                                <div className='col-md-3'>
+                        <div className='col-md-3'>
                             <div className='offer__img'>
                                 <img src={auto} alt='img1'/>
                             </div>

@@ -1,0 +1,34 @@
+.dquestion {
+    padding-top: 105px;
+    padding-bottom: 105px;
+}
+
+.dquestion__title {
+    font-size: 42px;
+    line-height: 1.23;
+    font-family: 'Ubuntu', Arial, sans-serif;
+    font-weight: 700;
+    color: #252c35;
+}
+
+.dquestion__flex {
+    display: flex;
+    margin-top: 60px;
+    column-gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.dquestion__box {
+    padding: 30px 30px 40px;
+    background-color: rgb(255, 255, 255);
+    width: 40%;
+    min-height: 340px;
+}
+
+.dquestion__list {
+    margin-top: 20px;
+}
+.dquestion__list li {
+    list-style-type: disc;
+}

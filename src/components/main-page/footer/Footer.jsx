@@ -8,9 +8,8 @@ const Footer = () => {
         <div className="container">
           <div className="row">
             <div className="col-sm-3 col-xs-12">
-              <a className="footer__logo-link" href="/home" target="_blank">
-                <div className="footer__logo t-title" field="title4" />
-              </a>
+              <br />
+              <br />
               <div className="footer__text t-descr t-descr_xxs" field="text">
                 <div style={{ color: "#ffffff" }}>
                   <span style={{ color: "rgb(247, 250, 246)" }}>

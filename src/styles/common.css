@@ -170,3 +170,77 @@ body {
 .vent__filter-block {
     display: flex;
 }
+
+.g__filter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 60px;
+    height: 524px;
+    background: -webkit-linear-gradient(top, rgb(37, 44, 53), rgba(72, 83, 88, 0.7)), url('./g__gilter.jpg') center center/cover no-repeat;
+}
+
+.g__block {
+    background: #fff;
+    width: 100%;
+    padding: 85px 60px;
+}
+
+.g__text {
+    font-size: 20px;
+    line-height: 1.55;
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-weight: 400;
+    color: #252c35;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.g__pic {
+    height: 209px;
+    background: -webkit-linear-gradient(top, rgb(37, 44, 53), rgba(72, 83, 88, 0.7)), url('./g__pic.jpg') center center/cover no-repeat;;
+}
+
+.g__filter-green {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 105px;
+    padding-bottom: 105px;
+    height: 524px;
+    background-color: #76b32a;
+}
+
+.g__title {
+    font-size: 42px;
+    font-weight: 700;
+    color: #f3f2f1;
+}
+
+.g__subtitle {
+    margin-top: 20px;
+    font-size: 20px;
+    color: #f3f2f1;
+}
+
+.g__btn {
+    margin-top: 20px;
+    padding: 10px 30px;
+    font-size: 20px;
+    font-weight: 700;
+    color: #f3f2f1;
+    background-color: #6c757d;
+    border: 1px solid #6c757d;
+    
+}
+
+.g__btn:hover {
+    background-color: transparent;
+}
+
+.g__footer {
+    padding-top: 150px;
+    padding-bottom: 160px;
+    height: 500px;
+    background: -webkit-linear-gradient(top, rgb(37, 44, 53), rgba(72, 83, 88, 0.7)), url('./g__footer.jpg') center center/cover no-repeat;;
+}

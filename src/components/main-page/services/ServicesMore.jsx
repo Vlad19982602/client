@@ -1,6 +1,17 @@
 import './services.css'
 
+import React, { useEffect } from 'react'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 const ServicesMore = () => {
+
+    useEffect(() => {
+        AOS.init({
+        duration: 1000, // продолжительность анимации в миллисекундах
+        });
+    }, []);
+
     return (
     <div className='services__more'>
         <div className='container'>
@@ -8,7 +19,7 @@ const ServicesMore = () => {
                 <div className="col-lg-8 col-lg-offset-1 col-md-10 col-md-offset-1 mt-100">
                     <ul className="services__container t-container">
                         <li
-                            className="services__col services__col_first t-list__item"
+                            className="services__col services__col_first t-list__item" data-aos="fade-up"
                             style={{ marginTop: 30, transitionDelay: "0s" }}
                         >
                             <div className="services__item d-flex ">
@@ -47,7 +58,7 @@ const ServicesMore = () => {
                             </div>
                         </li>
                         <li
-                            className="services__col"
+                            className="services__col" data-aos="fade-up"
                             style={{ marginTop: 30, transitionDelay: "0.16s" }}
                         >
                             <div className="services__item d-flex ">
@@ -86,7 +97,7 @@ const ServicesMore = () => {
                             </div>
                         </li>
                         <li
-                            className="services__col t-list__item"
+                            className="services__col t-list__item" data-aos="fade-up"
                             style={{ marginTop: 30, transitionDelay: "0.32s" }}
                         >
                             <div className="services__item d-flex ">
@@ -125,7 +136,7 @@ const ServicesMore = () => {
                             </div>
                         </li>
                         <li
-                            className="services__col t-list__item"
+                            className="services__col t-list__item" data-aos="fade-up"
                             style={{ marginTop: 30, transitionDelay: "0.48s" }}
                         >
                             <div className="services__item d-flex ">

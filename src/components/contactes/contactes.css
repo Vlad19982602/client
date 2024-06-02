@@ -31,8 +31,8 @@
 
 .contact-ex__item {
     z-index: 1;
-    position: absolute;
-    top: 900px;;
+    position: initial;
+    margin-top: 4%;
     background-color: rgb(72, 83, 88);
     min-height: 400px;
     padding: 60px;

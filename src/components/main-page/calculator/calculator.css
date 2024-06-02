@@ -45,6 +45,7 @@
     background-position: center center;
     border-color: transparent;
     border-style: solid;
+    cursor: pointer;
 }
 .calculator__btn-2 {
     color: #f3f2f1;
@@ -61,6 +62,7 @@
     background-position: center center;
     border-color: transparent;
     border-style: solid;
+    cursor: pointer;
 }
 
 .calculator__btn:hover {
@@ -100,4 +102,182 @@
 }
 .item3 {
     grid-row: span 2;
-    }
+}
+
+.t-descr {
+    font-family: 'Ubuntu',Arial,sans-serif;
+    font-weight: 400;
+    color: #252c35;
+}
+
+.t-descr_xxs {
+    font-size: 12px;
+    line-height: 1.55
+}
+
+.t-descr_xs {
+    font-size: 14px;
+    line-height: 1.55
+}
+
+.t-descr_sm {
+    font-size: 16px;
+    line-height: 1.55
+}
+
+.t-descr_md {
+    font-size: 18px;
+    line-height: 1.55
+}
+
+.t-descr_xl {
+    font-size: 22px;
+    line-height: 1.5
+}
+
+.t-descr_xxxl {
+    font-size: 28px;
+    line-height: 1.45;
+    letter-spacing: .45
+}
+
+.t-uptitle {
+    font-family: 'Ubuntu',Arial,sans-serif;
+    font-weight: 700;
+    color: #252c35;
+    letter-spacing: 2.5px
+}
+
+.t-uptitle_sm {
+    font-size: 12px
+}
+
+.t-btn {
+    display: inline-block;
+    font-family: 'Ubuntu',Arial,sans-serif;
+    border: 0 none;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    font-weight: 700;
+    background-image: none;
+    cursor: pointer;
+    /*-webkit-appearance: none;*/
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.t-checkboxes__wrapper {
+    display: block;
+    padding: 15px 15px 55px 15px;
+}
+.t-checkboxes__item {
+    display: flex;
+}
+.t-form__inputsbox .t-checkbox__control {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.t-form__inputsbox .t-checkbox__controls {
+    margin-top: 1px;
+    margin-bottom: 1px;
+}
+.t-checkbox__control .t-checkbox:checked~.t-checkbox__indicator {
+    opacity: 1;
+}
+.t-checkbox__indicator {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    height: 20px;
+    width: 20px;
+    border: 2px solid #000;
+    box-sizing: border-box;
+    margin-right: 10px;
+    -webkit-transition: all .2s;
+    transition: all .2s;
+    opacity: .6;
+}
+.t-input-block {
+    width: 100%;
+}
+
+.t-radio__indicator {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    height: 20px;
+    width: 20px;
+    border-color: #76b82a;
+    border-style: solid;
+    border-width: 2px;
+    box-sizing: border-box;
+    border-radius: 50%;
+    margin-right: 10px;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+    opacity: .6;
+}
+
+.t-radio__indicator:after {
+    content: '';
+    width: 10px;
+    height: 10px;
+    background: #76b82a;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    opacity: 0;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+}
+
+.t-input-block .t-radio__wrapper .t-radio__control {
+    display: flex;
+    justify-content: flex-start;
+}
+.t-input-title {
+    padding-bottom: 5px;
+    font-size: 26px;
+    line-height: 1.5;
+    font-weight: 400
+}
+
+.modal-dialog {
+    max-width: 600px;
+    margin: 1.75rem auto;
+}
+
+.t-checkboxcontrols {
+    width: 300px;;
+    display: flex;
+    gap: 5px;
+}
+.t862__quiz-description-title {
+    font-family: 'Ubuntu',Arial,sans-serif;
+    font-weight: 700;
+    color: #252c35;
+    letter-spacing: 2.5px;
+    height: 450px;
+}
+.t862__quiz-description-title svg {
+    width: 100% !important;
+    height: 100% !important;
+}
+.t862__quiz-description-text {
+	display: inline-block;
+	vertical-align: top;
+	width: 90%;
+}
+
+.text-center {
+    display: block;
+}

@@ -14,6 +14,7 @@
     width: 300px;
     min-width: 300px;
     height: auto;
+    text-decoration: none;
 }
 
 .subTitle__logo-img {
@@ -40,13 +41,26 @@
     text-align: center;
     margin: 0 auto;
 }
-.subTitle__wrapper-phone {
+
+.subTitle__wrapper a {
+    text-decoration: none;
+    color: #000;
+}
+
+.subTitle__wrapper-phone-num {
+    display: flex;
+    color: #000
+}
+
+.subTitle__logo div {
+    text-decoration: none;
     color: #000;
 }
 
 .subTitle__wrapper .nav-item {
     display: flex;
     justify-content: space-around;
+    color: #000
 }
 
 .subTitle__btn {

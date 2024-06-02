@@ -1,10 +1,19 @@
 import './contactes.css'
 
+import React, { useEffect } from 'react'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 const Contacted = () => {
+    useEffect(() => {
+        AOS.init({
+        duration: 1000, // продолжительность анимации в миллисекундах
+        });
+    }, []);
     return ( 
         <>
             <main className="contact-ex">
-                <div className="t-container">
+                <div className="t-container" data-aos="fade-up">
                     <div className="row">
                         <div className="col-md-8">
                             <div className="contact-ex__wrapper">

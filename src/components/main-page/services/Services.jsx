@@ -1,13 +1,24 @@
 import './services.css'
 
+import React, { useEffect } from 'react'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 const Services = () => {
+
+    useEffect(() => {
+        AOS.init({
+        duration: 1000, // продолжительность анимации в миллисекундах
+        });
+    }, []);
+
     return ( 
         <div className="services">
             <div className="container">
                 <div className='row'>
                     <div className='col-lg-8 col-lg-offset-1 col-md-10 col-md-offset-1 mt-100'>
                         <ul className='services__container t-container'>
-                            <li className='t-list__item d-flex'>
+                            <li className='t-list__item d-flex' data-aos="fade-up">
                                 <div className="services__item d-flex ">
                                     <div className="t-cell t-valign_top">
                                         <div className="services__imgwrapper" style={{ width: 50 }}>
@@ -23,7 +34,7 @@ const Services = () => {
                                     </div>
                                 </div>
                             </li>
-                            <li className="t-list__item d-flex" >
+                            <li className="t-list__item d-flex" data-aos="fade-up">
                                 <div className="services__item d-flex ">
                                     <div className="t-cell t-valign_top">
                                         <div className="services__imgwrapper" style={{ width: 50 }}>
@@ -39,7 +50,7 @@ const Services = () => {
                                     </div>
                                 </div>
                             </li>
-                            <li className="t-list__item d-flex">
+                            <li className="t-list__item d-flex" data-aos="fade-up">
                                 <div className="services__item d-flex ">
                                     <div className="t-cell t-valign_top">
                                         <div className="services__imgwrapper" style={{ width: 50 }}>
@@ -55,7 +66,7 @@ const Services = () => {
                                     </div>
                                 </div>
                             </li>
-                            <li className="t-list__item d-flex">
+                            <li className="t-list__item d-flex" data-aos="fade-up">
                                 <div className="services__item d-flex ">
                                     <div className="t-cell t-valign_top">
                                         <div className="services__imgwrapper" style={{ width: 50 }}>

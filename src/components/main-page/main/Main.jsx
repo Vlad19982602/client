@@ -110,7 +110,7 @@ function Main () {
                 </div>
                 <div className='col-lg-3 offset-lg-2 col-md-4 offset-md-2 col-sm-8 offset-sm-2 col-xs-12'>
                     <div
-                        className="modal show"
+                        className="modales show"
                         style={{ display: 'block', position: 'initial' }}
                         >
                         <Modal.Dialog>

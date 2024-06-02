@@ -12,10 +12,12 @@ function SubTitle () {
                     <div className="subTitle__row">
                         <div className='subTitle__wrapper'>
                             <div className='col-md-4 col-sm-4 col-xs-10'>
-                                <div className='subTitle__logo'>
+                                <a href='/'>
+                                    <div className='subTitle__logo'>
                                     <img src={logoImg} alt='logo' className='subTitle__logo-img'/>
                                     <div>Системы вентиляции помещений в Челябинске и Челябинской области</div>
                                 </div>
+                                </a>
                             </div>
                         </div>
                         <div className='col-md-4 col-sm-4 col-xs-10'>
@@ -31,11 +33,14 @@ function SubTitle () {
                         </div>
                         <div className='col-md-4 col-sm-4 col-xs-10'>
                             <div className='subTitle__wrapper'>
-                                <Nav className="justify-content-center" activeKey="/home">
-                                    <Nav.Item>
-                                        <Nav.Link eventKey="link-1" className='subTitle__wrapper-phone'>
+                                <Nav className="justify-content-center" activeKey="/">
+                                    <Nav.Item >
+                                        <Nav.Link className='subTitle__wrapper-phone-num'eventKey="link-1" >
                                             <img src={phone} alt='phone'/>
-                                            +7 (922) 630-21-03</Nav.Link>
+                                            <div>
+                                                +7 (922) 630-21-03
+                                            </div>
+                                        </Nav.Link>
                                     </Nav.Item>
                                 </Nav>
                                 <Button className='subTitle__btn' variant="success">Заказать услугу</Button>{' '}

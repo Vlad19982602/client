@@ -3,14 +3,24 @@ import './news.css'
 import zont from "./1.jpg"
 import meeting from "./2.jpg"
 
+import React, { useEffect } from 'react'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 const News = () => {
+    useEffect(() => {
+        AOS.init({
+        duration: 1000, // продолжительность анимации в миллисекундах
+        });
+    }, []);
+
     return ( 
         <>
             <section className='news'>
                 <div className='t-container'>
                     <div className='row'>
                         <div className='col-md-4'>
-                            <div className='news__card'>
+                            <div className='news__card' data-aos="fade-up">
                                 <img src={zont} alt='' className='news__card-img-top'/>
                                 <div className='news__card-body'>
                                     <h5 className='news__card-title'>Thursday, May 17</h5>
@@ -20,7 +30,7 @@ const News = () => {
                             </div>
                         </div>
                         <div className='col-md-4'>
-                            <div className='news__card'>
+                            <div className='news__card' data-aos="fade-up">
                                 <img src={meeting} alt='' className='news__card-img-top'/>
                                 <div className='news__card-body'>
                                     <h5 className='news__card-title'>Monday, May 7</h5>

@@ -44,9 +44,10 @@
 }
 
 .slider__content {
-    height: 450px;
+    height: 100%;
     padding: 25px;
     background-color: #f7f7f7;
+    padding-bottom: 120px;
 }
 
 .slider__content .row {
@@ -193,7 +194,6 @@
 
 
 .slider__content .t-card__link {
-    display: block;
     text-decoration: none;
 }
 .slider__content .slider__animation_fast {
@@ -201,7 +201,26 @@
 }
 
 .slider__content .t-card__link-in {
-    color: #000;
+    color: #ffffff;
+    text-decoration: none;
+}
+.t-card__btn-wrapper {
+    border-color: #f7f7f7;
+}
+
+.slider__overlay:hover {
+    background-color: transparent !important;
+}
+.slider__textwrapper:hover {
+    background-color: transparent !important;
+}
+.t-card__link:hover {
+    transform: scale(1.2);
+}
+.t-card__link {
+    display: flex;
+    justify-content: center;
+    transition: all 1.2s;
 }
 
 
@@ -214,10 +233,156 @@
     margin-top: 40px;
 }
 .slider__content .t-card__btn {
-    display: table-cell;
     vertical-align: middle;
     text-align: center;
     background: none;
     border: 0 none;
 }
 
+
+
+
+
+.slider__link {
+  cursor: pointer;
+}
+
+.no_click {
+  background-color: #f7f7f7;
+  /* Другие стили для неактивного состояния */
+}
+
+.after_click {
+  background-color: blue;
+  /* Другие стили для активного состояния */
+}
+
+/* Пример других стилей */
+.internal_link, .external_link, .rising_link, .roof_link {
+  padding: 10px;
+  margin: 5px;
+  text-align: center;
+}
+
+
+/* Основные стили для компонента */
+.slider__content {
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+.slider__item {
+  position: relative;
+  overflow: hidden;
+  margin: 20px 0;
+}
+
+.slider__image-wrapper {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+.slider__image {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease-in-out;
+}
+
+.slider__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  transition: background 0.3s ease-in-out;
+}
+
+.slider__textwrapper {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  color: #fff;
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.slider__textwrapper__content {
+  display: flex;
+  flex-direction: column;
+}
+
+.slider__inner-wrapper {
+  margin-bottom: 10px;
+}
+
+.slider__button-container {
+  transition: opacity 0.3s ease-in-out;
+}
+
+.slider__item:hover .slider__image {
+  transform: scale(1.05);
+}
+
+.slider__item:hover .slider__overlay {
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.slider__item:hover .slider__textwrapper {
+  transform: translateY(-10px);
+}
+
+.slider__item:hover .slider__button-container {
+  opacity: 1;
+}
+
+.t-card__btn {
+  color: #f7f7f7;;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.t-card__btn:hover {
+  background-color: #f1c40f; /* Цвет при наведении */
+  color: #333;
+}
+
+/* SliderComponent.css */
+/* .slider {
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+.slider__item {
+    flex: 0 0 auto;
+    margin-right: 10px; 
+}
+
+.slider__link a {
+    display: block;
+    padding: 10px 20px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #000;
+}
+
+.internal_link a {
+    background-color: #f8d7da;
+}
+
+.external_link a {
+    background-color: #d4edda;
+}
+
+.rising_link a {
+    background-color: #fff3cd;
+}
+
+.roof_link a {
+    background-color: #d1ecf1;
+} */

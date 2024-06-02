@@ -1,14 +1,24 @@
 import './licensy.css'
 
 import UralSibir from "./licensy/UralSibir.jpg"
-import licenziya from "./licensy/licenziya.jpg"  
+import licenziya from "./licensy/licenziya.jpg" 
+
+import React, { useEffect } from 'react'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Licensy = () => {
+    useEffect(() => {
+        AOS.init({
+        duration: 1000, // продолжительность анимации в миллисекундах
+        });
+    }, []);
+
     return (
         <>
             <section className='licensy'>
                 <div className='t-container'>
-                    <div className='licensy__wrapper'>
+                    <div className='licensy__wrapper' data-aos="fade-up">
                         <div className='col-lg-5 col-md-8 col-sm-9 col-xs-12'>
                             <img src={UralSibir} alt="soyuz"/>
                         </div>
@@ -24,7 +34,7 @@ const Licensy = () => {
                             </div>
                         </div>
                     </div>
-                    <div className='licensy__wrapper'>
+                    <div className='licensy__wrapper' data-aos="fade-up">
                         <div className='col-lg-5 col-md-8 col-sm-9 col-xs-12'>
                             <img src={licenziya} alt="soyuz"/>
                         </div>

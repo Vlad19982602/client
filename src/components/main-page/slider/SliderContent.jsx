@@ -10,7 +10,7 @@ const SliderContent = () => {
                 <div className="slider__wrapper">
                   <div
                     className="slider__table"
-                    style={{ height: 400, borderRadius: 0, minHeight: "auto" }}
+                    style={{ height: "auto", borderRadius: 0, minHeight: "auto" }}
                   >
                     <div className="slider__cell-1 t-align_left t-valign_middle">
                       <div
@@ -44,13 +44,6 @@ const SliderContent = () => {
                             <div className="t-card__btn-wrapper">
                               <div
                                 className="t-card__btn t-btn t-btn_sm"
-                                style={{
-                                  color: "#252c35",
-                                  backgroundColor: "#f3f2f1",
-                                  borderRadius: 0,
-                                  MozBorderRadius: 0,
-                                  WebkitBorderRadius: 0
-                                }}
                               >
                                 <a href="!#" className="t-card__link-in">
                                   ПОДРОБНЕЕ
@@ -64,7 +57,7 @@ const SliderContent = () => {
                   </div>
                   <div
                     className="slider__table"
-                    style={{ height: 400, borderRadius: 0, minHeight: "auto" }}
+                    style={{ height: 500, borderRadius: 0, minHeight: "auto" }}
                   >
                     <div className="slider__cell-2 t-align_left t-valign_middle">
                       <div
@@ -98,13 +91,6 @@ const SliderContent = () => {
                             <div className="t-card__btn-wrapper">
                               <div
                                 className="t-card__btn t-btn t-btn_sm"
-                                style={{
-                                  color: "#252c35",
-                                  backgroundColor: "#f3f2f1",
-                                  borderRadius: 0,
-                                  MozBorderRadius: 0,
-                                  WebkitBorderRadius: 0
-                                }}
                               >
                                 <a href="!#" className="t-card__link-in">
                                   ПОДРОБНЕЕ
@@ -124,7 +110,7 @@ const SliderContent = () => {
                 <div className="slider__wrapper">
                   <div
                     className="slider__table"
-                    style={{ height: 400, borderRadius: 0, minHeight: "auto" }}
+                    style={{ height: 500, borderRadius: 0, minHeight: "auto" }}
                   >
                     <div className="slider__cell-3 t-align_left t-valign_middle">
                       <div
@@ -156,13 +142,6 @@ const SliderContent = () => {
                             <div className="t-card__btn-wrapper">
                               <div
                                 className="t-card__btn t-btn t-btn_sm"
-                                style={{
-                                  color: "#252c35",
-                                  backgroundColor: "#f3f2f1",
-                                  borderRadius: 0,
-                                  MozBorderRadius: 0,
-                                  WebkitBorderRadius: 0
-                                }}
                               >
                                 <a href="!#" className="t-card__link-in">
                                   ПОДРОБНЕЕ
@@ -176,7 +155,7 @@ const SliderContent = () => {
                   </div>
                   <div
                     className="slider__table"
-                    style={{ height: 400, borderRadius: 0, minHeight: "auto" }}
+                    style={{ height: 500, borderRadius: 0, minHeight: "auto" }}
                   >
                     <div className="slider__cell-4 t-align_left t-valign_middle">
                       <div
@@ -208,7 +187,7 @@ const SliderContent = () => {
             <div className="col-lg-4 col-lg-offset-0 col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 col-xs-12" style={{display: 'none'}}>
               <div
                 className="slider__table"
-                style={{ height: 400, borderRadius: 0, minHeight: "auto" }}
+                style={{ height: 500, borderRadius: 0, minHeight: "auto" }}
               >
                 <div className="slider__cell-5 t-align_left t-valign_middle">
                   <div
@@ -241,7 +220,7 @@ const SliderContent = () => {
             <div className="col-lg-4 col-lg-offset-0 col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 col-xs-12" style={{display: 'none'}}>
               <div
                 className="slider__table"
-                style={{ height: 400, borderRadius: 0, minHeight: "auto" }}
+                style={{ height: "auto", borderRadius: 0, minHeight: "auto" }}
               >
                 <div className="slider__cell-6 t-align_left t-valign_middle">
                   <div
@@ -277,13 +256,6 @@ const SliderContent = () => {
                         <div className="t-card__btn-wrapper">
                           <div
                             className="t-card__btn t-btn t-btn_sm"
-                            style={{
-                              color: "#252c35",
-                              backgroundColor: "#f3f2f1",
-                              borderRadius: 0,
-                              MozBorderRadius: 0,
-                              WebkitBorderRadius: 0
-                            }}
                           >
                             <a href="!#" className="t-card__link-in">
                               ПОДРОБНЕЕ

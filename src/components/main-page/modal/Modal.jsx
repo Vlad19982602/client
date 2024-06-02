@@ -1,4 +1,5 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react';
+// import { useState } from "react";
 import './modal.css'
 
 import CloseButton from 'react-bootstrap/CloseButton';
@@ -6,7 +7,24 @@ import CloseButton from 'react-bootstrap/CloseButton';
 
 const Modal = ({children, open, setOpen}) => {
 
-    if(!open) return '';
+    const [visible, setVisible] = useState(false);
+
+    useEffect(() => {
+        if (open) {
+        const timer = setTimeout(() => {
+            setVisible(true);
+        }, 60000); // 60 секунд = 60000 миллисекунд
+
+        return () => clearTimeout(timer); // очистка таймера при размонтировании
+        } else {
+        setVisible(false);
+        }
+    }, [open]);
+
+
+    if (!open || !visible) {
+        return null; // Не отображаем модальное окно, если оно закрыто или если прошло меньше 60 секунд
+    }
 
     return(
         <>

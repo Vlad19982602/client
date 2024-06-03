@@ -1,283 +1,164 @@
 .calculator {
-    background: #485358;
-    padding: 6rem 0;
+  background-color: #f7f7f7;
+  padding: 90px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 .calculator__title {
-    color: #fafafa;
-    font-size: 36px;
-    font-family: 'Ubuntu',Arial,sans-serif;
-    line-height: 1.2;
-    font-weight: 700;
-    width: 700px;
-    text-transform: uppercase;
-    background-position: center center;
-    border-color: transparent;
-    border-style: solid;
-    padding: 10px;
+  font-size: 32px;
+  font-weight: bold;
+  color: #252c35;
+  margin-bottom: 10px;
 }
 
 .calculator__subtitle {
-    color: #ffffff;
-    font-size: 20px;
-    font-family: 'Open Sans',Arial,sans-serif;
-    line-height: 1.2;
-    font-weight: 400;
-    background-position: center center;
-    border-color: transparent;
-    border-style: solid;
-    padding: 10px;
+  font-size: 24px;
+  color: #252c35;
+  margin-bottom: 20px;
 }
 
 .calculator__btn {
-    color: #f3f2f1;
-    width: 40%;
-    font-size: 20px;
-    font-family: 'Open Sans',Arial,sans-serif;
-    line-height: 1.6;
-    font-weight: 700;
-    padding: 1.2rem 1.2rem;
-    text-transform: uppercase;
-    border-width: 1px;
-    margin-top: 30px;
-    border-radius: 8px;
-    background-color: #198754;
-    background-position: center center;
-    border-color: transparent;
-    border-style: solid;
-    cursor: pointer;
-}
-.calculator__btn-2 {
-    color: #f3f2f1;
-    width: 100%;
-    height: 64px;
-    font-size: 20px;
-    font-family: 'Open Sans',Arial,sans-serif;
-    font-weight: 700;
-    text-transform: uppercase;
-    border-width: 1px;
-    margin-top: 30px;
-    border-radius: 8px;
-    background-color: #198754;
-    background-position: center center;
-    border-color: transparent;
-    border-style: solid;
-    cursor: pointer;
+  background-color: #76b82a;
+  border: none;
+  color: white;
+  font-size: 16px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 .calculator__btn:hover {
-    color: #198754;
-    background-color: #f8f9fa;
+  background-color: #679f23;
 }
 
-.calculator__descr {
-    color: #fff;
-    font-size: 16px;
-    font-family: 'Open Sans', Arial, sans-serif;
-    line-height: 1.55;
-    font-weight: 700;
-    background-position: center center;
-    border-color: transparent;
-    border-style: solid;
-}
-.calculator__text {
-    margin-top: 15px;
-    color: #fff;
-    font-size: 20px;
-    font-family: 'Open Sans', Arial, sans-serif;
-    line-height: 1.55;
-    font-weight: 400;
-    background-position: center center;
-    border-color: transparent;
-    border-style: solid;
+.popup_calc {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-.calculator__block {
-    display: grid;
-    grid-template-columns: auto auto;
-    grid-template-rows: auto auto auto;
-    /* Автоматическое размещение в колонку */
-    grid-auto-flow: column;
-
-}
-.item3 {
-    grid-row: span 2;
-}
-
-.t-descr {
-    font-family: 'Ubuntu',Arial,sans-serif;
-    font-weight: 400;
-    color: #252c35;
+.popup_calc_close {
+  position: absolute;
+  top: 12px;
+  right: 27px;
+  background: none;
+  border: none;
+  font-size: 34px;
+  cursor: pointer;
+  color: #252c35;
 }
 
-.t-descr_xxs {
-    font-size: 12px;
-    line-height: 1.55
+.popup_calc_content {
+  padding: 20px;
 }
 
-.t-descr_xs {
-    font-size: 14px;
-    line-height: 1.55
+.t862__quiz-description-block {
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
 }
 
-.t-descr_sm {
-    font-size: 16px;
-    line-height: 1.55
+.t-input-group {
+  margin-bottom: 20px;
 }
 
-.t-descr_md {
-    font-size: 18px;
-    line-height: 1.55
-}
-
-.t-descr_xl {
-    font-size: 22px;
-    line-height: 1.5
-}
-
-.t-descr_xxxl {
-    font-size: 28px;
-    line-height: 1.45;
-    letter-spacing: .45
-}
-
-.t-uptitle {
-    font-family: 'Ubuntu',Arial,sans-serif;
-    font-weight: 700;
-    color: #252c35;
-    letter-spacing: 2.5px
-}
-
-.t-uptitle_sm {
-    font-size: 12px
-}
-
-.t-btn {
-    display: inline-block;
-    font-family: 'Ubuntu',Arial,sans-serif;
-    border: 0 none;
-    text-align: center;
-    white-space: nowrap;
-    vertical-align: middle;
-    font-weight: 700;
-    background-image: none;
-    cursor: pointer;
-    /*-webkit-appearance: none;*/
-    -moz-user-select: none;
-    -ms-user-select: none;
-    -o-user-select: none;
-    user-select: none;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-}
-.t-checkboxes__wrapper {
-    display: block;
-    padding: 15px 15px 55px 15px;
-}
-.t-checkboxes__item {
-    display: flex;
-}
-.t-form__inputsbox .t-checkbox__control {
-    margin-top: 15px;
-    margin-bottom: 15px;
-}
-.t-form__inputsbox .t-checkbox__controls {
-    margin-top: 1px;
-    margin-bottom: 1px;
-}
-.t-checkbox__control .t-checkbox:checked~.t-checkbox__indicator {
-    opacity: 1;
-}
-.t-checkbox__indicator {
-    position: relative;
-    display: inline-block;
-    vertical-align: middle;
-    height: 20px;
-    width: 20px;
-    border: 2px solid #000;
-    box-sizing: border-box;
-    margin-right: 10px;
-    -webkit-transition: all .2s;
-    transition: all .2s;
-    opacity: .6;
-}
-.t-input-block {
-    width: 100%;
-}
-
-.t-radio__indicator {
-    position: relative;
-    display: inline-block;
-    vertical-align: middle;
-    height: 20px;
-    width: 20px;
-    border-color: #76b82a;
-    border-style: solid;
-    border-width: 2px;
-    box-sizing: border-box;
-    border-radius: 50%;
-    margin-right: 10px;
-    -webkit-transition: all 0.2s;
-    transition: all 0.2s;
-    opacity: .6;
-}
-
-.t-radio__indicator:after {
-    content: '';
-    width: 10px;
-    height: 10px;
-    background: #76b82a;
-    border-radius: 50%;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
-    opacity: 0;
-    -webkit-transition: all 0.2s;
-    transition: all 0.2s;
-}
-
-.t-input-block .t-radio__wrapper .t-radio__control {
-    display: flex;
-    justify-content: flex-start;
-}
 .t-input-title {
-    padding-bottom: 5px;
-    font-size: 26px;
-    line-height: 1.5;
-    font-weight: 400
+  font-size: 18px;
+  font-weight: bold;
+  color: #252c35;
+  margin-bottom: 10px;
 }
 
-.modal-dialog {
-    max-width: 600px;
-    margin: 1.75rem auto;
+.t-checkbox {
+    display: contents;
 }
 
-.t-checkboxcontrols {
-    width: 300px;;
-    display: flex;
-    gap: 5px;
-}
-.t862__quiz-description-title {
-    font-family: 'Ubuntu',Arial,sans-serif;
-    font-weight: 700;
-    color: #252c35;
-    letter-spacing: 2.5px;
-    height: 450px;
-}
-.t862__quiz-description-title svg {
-    width: 100% !important;
-    height: 100% !important;
-}
-.t862__quiz-description-text {
-	display: inline-block;
-	vertical-align: top;
-	width: 90%;
+.t-checkboxes__wrapper {
+  list-style-type: none;
+  padding: 0;
 }
 
-.text-center {
-    display: block;
+
+.t-checkboxes__item {
+  margin-bottom: 10px;
+}
+
+.t-checkbox__controls {
+  display: flex;
+  align-items: center;
+}
+
+.t-checkbox__indicator {
+  width: 20px;
+  height: 20px;
+  border: 2px solid #76b82a;
+  border-radius: 3px;
+  margin-right: 10px;
+  position: relative;
+}
+
+.t-checkbox__controls input[type="checkbox"]:checked + .t-checkbox__indicator::after {
+  content: '';
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: #76b82a;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 2px;
+}
+
+.d-btn {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.d-btn button {
+  background-color: #76b82a;
+  border: none;
+  color: white;
+  font-size: 16px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.d-btn button:hover {
+  background-color: #679f23;
+}
+
+.t-input-block input[type="range"] {
+  width: 100%;
+  -webkit-appearance: none;
+  appearance: none;
+  height: 8px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  transition: opacity 0.2s;
+}
+
+.t-input-block input[type="range"]:hover {
+  opacity: 1;
+}
+
+.t-input-block input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  background: #76b82a;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.t-input-block input[type="range"]::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  background: #76b82a;
+  cursor: pointer;
+  border-radius: 50%;
 }

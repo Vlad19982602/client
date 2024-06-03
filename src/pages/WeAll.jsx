@@ -3,6 +3,7 @@ import Comand from "../components/about-us/comand/Comand";
 import Company from "../components/about-us/company-us/Company";
 import Numbers from "../components/about-us/in-numbers/Numbers";
 import Licensy from "../components/about-us/licensy/Licensy";
+import Calculator from '../components/main-page/calculator/Calculator'
 
 const WeAll = () => {
     return (
@@ -12,6 +13,7 @@ const WeAll = () => {
             <Comand/>
             <Licensy/>
             <Carrier/>
+            <Calculator/>
         </>
       );
 }

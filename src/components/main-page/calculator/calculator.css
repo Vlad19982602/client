@@ -163,3 +163,24 @@
   cursor: pointer;
   border-radius: 50%;
 }
+
+.result {
+  background-color: #e9ffe9;
+  border: 2px solid #76b82a;
+  border-radius: 8px;
+  padding: 20px;
+  margin-top: 20px;
+  text-align: center;
+  color: #252c35;
+}
+
+.result h4 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #252c35;
+  margin-bottom: 10px;
+}
+
+.result p {
+  font-size: 16px;
+}

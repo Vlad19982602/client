@@ -1,5 +1,7 @@
+import { black } from 'colors'
 import "./header.css";
 import Dropdown from "react-bootstrap/Dropdown";
+import { Link } from 'react-router-dom';
 
 function Header() {
   return (
@@ -79,6 +81,7 @@ function Header() {
                 </a>
               </li>
             </ul>
+            <Link style={{black}} to="/register">Регистрация</Link>
           </nav>
         </div>
       </div>

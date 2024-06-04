@@ -11,7 +11,7 @@ const Calculator = () => {
     question2: 90,
     question3: [],
     question4: [],
-    question5: ''
+    question5: { method: '', contact: '' }
   });
 
   const [showModal, setShowModal] = useState({
@@ -24,16 +24,6 @@ const Calculator = () => {
 
   const [result, setResult] = useState(null);
 
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData({ ...formData, [name]: value });
-  };
-
-  const handleRangeChange = (e) => {
-    const { value } = e.target;
-    setFormData((prevData) => ({ ...prevData, question2: value }));
-  };
-
   const handleCheckboxChange = (e, question) => {
     const { value, checked } = e.target;
     setFormData((prevFormData) => ({
@@ -44,11 +34,30 @@ const Calculator = () => {
     }));
   };
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
+  const handleRangeChange = (e) => {
+    const { value } = e.target;
+    setFormData((prevFormData) => ({
+      ...prevFormData,
+      question2: value
+    }));
+  };
+
+  const handleContactChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prevFormData) => ({
+      ...prevFormData,
+      question5: {
+        ...prevFormData.question5,
+        [name]: value
+      }
+    }));
+  };
+
+  const handleSubmit = async () => {
     try {
       const response = await axios.post('http://localhost:5000/api/calculate', formData);
       setResult(response.data);
+      handleModalClose('question5');
     } catch (error) {
       console.error('Error calculating:', error);
     }
@@ -76,8 +85,9 @@ const Calculator = () => {
   ];
 
   const optionsQuestion4 = [
-    "в течение 2-6 месяцев",
-    "в течение 1 года",
+    "Подача чистого воздуха в помещение",
+    "Изменение и поддержание температуры воздуха",
+    "Осушение воздуха (уменьшение влажности)",
     "Другое"
   ];
 
@@ -244,12 +254,30 @@ const Calculator = () => {
                                                     </li>
                                                   ))}
                                                 </ul>
+                                              ) : question === 'question5' ? (
+                                                <div className="t-input-block">
+                                                  <select name="method" value={formData.question5.method} onChange={handleContactChange} style={{ width: '100%', marginBottom: '10px' }}>
+                                                    <option value="">Выберите способ связи</option>
+                                                    <option value="phone">Телефон</option>
+                                                    <option value="email">Электронная почта</option>
+                                                    <option value="vk">ВКонтакте</option>
+                                                    <option value="instagram">Instagram</option>
+                                                  </select>
+                                                  <input
+                                                    type="text"
+                                                    name="contact"
+                                                    value={formData.question5.contact}
+                                                    onChange={handleContactChange}
+                                                    placeholder="Введите контактные данные"
+                                                    style={{ width: '100%' }}
+                                                  />
+                                                </div>
                                               ) : (
                                               <Form.Control
                                                 type="text"
                                                 name={question}
-                                                value={"check"}
-                                                onChange={handleChange}
+                                                value={formData[question]}
+                                                onChange={(e) => handleCheckboxChange(e, question)}
                                                 placeholder={`Ваш ответ на вопрос ${index + 2}`}
                                               />
                                             )}

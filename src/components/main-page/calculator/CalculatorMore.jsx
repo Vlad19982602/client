@@ -34,6 +34,17 @@ const Calculator = () => {
     setFormData((prevData) => ({ ...prevData, question2: value }));
   };
 
+  const handleContactChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prevFormData) => ({
+      ...prevFormData,
+      question5: {
+        ...prevFormData.question5,
+        [name]: value
+      }
+    }));
+  };
+
   const handleCheckboxChange = (e, question) => {
     const { value, checked } = e.target;
     setFormData((prevFormData) => ({
@@ -244,6 +255,24 @@ const Calculator = () => {
                                                     </li>
                                                   ))}
                                                 </ul>
+                                              ) : question === 'question5' ? (
+                                                <div className="t-input-block">
+                                                  <select name="method" value={formData.question5.method} onChange={handleContactChange} style={{ width: '100%', marginBottom: '10px' }}>
+                                                    <option value="">Выберите способ связи</option>
+                                                    <option value="phone">Телефон</option>
+                                                    <option value="email">Электронная почта</option>
+                                                    <option value="vk">ВКонтакте</option>
+                                                    <option value="instagram">Instagram</option>
+                                                  </select>
+                                                  <input
+                                                    type="text"
+                                                    name="contact"
+                                                    value={formData.question5.contact}
+                                                    onChange={handleContactChange}
+                                                    placeholder="Введите контактные данные"
+                                                    style={{ width: '100%' }}
+                                                  />
+                                                </div>
                                               ) : (
                                               <Form.Control
                                                 type="text"

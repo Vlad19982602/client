@@ -28,7 +28,7 @@ const Register = () => {
     <form onSubmit={handleSubmit}>
       <input
         type="text"
-        name="Никнейм"
+        name="username"
         value={username}
         onChange={handleChange}
         placeholder="Имя"

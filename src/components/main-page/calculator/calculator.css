@@ -92,7 +92,7 @@
 }
 
 .t-checkbox__indicator {
-  width: 20px;
+  width: 20px !important;
   height: 20px;
   border: 2px solid #76b82a;
   border-radius: 3px;
@@ -103,7 +103,7 @@
 .t-checkbox__controls input[type="checkbox"]:checked + .t-checkbox__indicator::after {
   content: '';
   position: absolute;
-  width: 10px;
+  width: 20px !important;
   height: 10px;
   background-color: #76b82a;
   top: 50%;

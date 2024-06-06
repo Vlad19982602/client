@@ -5,7 +5,7 @@ import './modal.css'
 import CloseButton from 'react-bootstrap/CloseButton';
 
 
-const Modal = ({children, open, setOpen}) => {
+const Modal = ({open, setOpen}) => {
 
     const [visible, setVisible] = useState(false);
 
@@ -43,7 +43,6 @@ const Modal = ({children, open, setOpen}) => {
                     </div>
                     <div className='modal__text-phone bold'>+7 (922) 630-21-03</div>
                 </div>
-                {children}
             </div>
         </>
     )

@@ -86,6 +86,13 @@ const Calculator = () => {
     "Другое"
   ];
 
+  const optionsQuestion3 = [
+    "Подача чистого воздуха в помещение",
+    "Изменение и поддержание температуры воздуха",
+    "Осушение воздуха (уменьшение влажности)",
+    "Другое"
+  ];
+
   const optionsQuestion4 = [
     "в течение 2-6 месяцев",
     "в течение 1 года",
@@ -219,30 +226,14 @@ const Calculator = () => {
                                               </div>
                                             ) : question === 'question3' ? (
                                               <ul className="t-checkboxes__wrapper">
-                                                <li className="t-checkboxes__item">
-                                                  <label className="t-checkbox__controls t-text t-textxs" style={{ color: '#252c35' }}>
-                                                    <input type="checkbox" value="Подача чистого воздуха в помещение" className="t-checkbox" onChange={(e) => handleCheckboxChange(e, 'question3')} />
-                                                    <div className="t-checkbox__indicator" style={{ borderColor: '#76b82a' }}></div>Подача чистого воздуха в помещение
-                                                  </label>
-                                                </li>
-                                                <li className="t-checkboxes__item">
-                                                  <label className="t-checkbox__controls t-text t-textxs" style={{ color: '#252c35' }}>
-                                                    <input type="checkbox" value="Изменение и поддержание температуры воздуха" className="t-checkbox" onChange={(e) => handleCheckboxChange(e, 'question3')} />
-                                                    <div className="t-checkbox__indicator" style={{ borderColor: '#76b82a' }}></div>Изменение и поддержание температуры воздуха
-                                                  </label>
-                                                </li>
-                                                <li className="t-checkboxes__item">
-                                                  <label className="t-checkbox__controls t-text t-textxs" style={{ color: '#252c35' }}>
-                                                    <input type="checkbox" value="Осушение воздуха (уменьшение влажности)" className="t-checkbox" onChange={(e) => handleCheckboxChange(e, 'question3')} />
-                                                    <div className="t-checkbox__indicator" style={{ borderColor: '#76b82a' }}></div>Осушение воздуха (уменьшение влажности)
-                                                  </label>
-                                                </li>
-                                                <li className="t-checkboxes__item">
-                                                  <label className="t-checkbox__controls t-text t-textxs" style={{ color: '#252c35' }}>
-                                                    <input type="checkbox" value="Другое" className="t-checkbox" onChange={(e) => handleCheckboxChange(e, 'question3')} />
-                                                    <div className="t-checkbox__indicator" style={{ borderColor: '#76b82a' }}></div>Другое
-                                                  </label>
-                                                </li>
+                                                {optionsQuestion3.map((option, idx) => (
+                                                    <li className="t-checkboxes__item" key={`question3-${idx}`}>
+                                                      <label className="t-checkbox__controls t-text t-text_xs" style={{ color: '#252c35' }}>
+                                                        <input type="checkbox" value={option} className="t-checkbox" onChange={(e) => handleCheckboxChange(e, 'question3')} />
+                                                        <div className="t-checkbox__indicator" style={{ borderColor: '#76b82a' }}></div>{option}
+                                                      </label>
+                                                    </li>
+                                                  ))}
                                               </ul>
                                               ) : question === 'question4' ? (
                                                 <ul className="t-checkboxes__wrapper">

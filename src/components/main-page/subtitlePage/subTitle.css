@@ -6,7 +6,9 @@
 .subTitle__row {
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
 .subTitle__logo {
@@ -25,10 +27,9 @@
 }
 
 .subTitle__logo div {
-    font-family: 'Ubuntu', Arial,sans-serif;
+    font-family: 'Ubuntu', Arial, sans-serif;
     margin-top: 10px;
 }
-
 
 .subTitle__descr {
     font-size: 16px;
@@ -49,7 +50,7 @@
 
 .subTitle__wrapper-phone-num {
     display: flex;
-    color: #000
+    color: #000;
 }
 
 .subTitle__logo div {
@@ -60,7 +61,7 @@
 .subTitle__wrapper .nav-item {
     display: flex;
     justify-content: space-around;
-    color: #000
+    color: #000;
 }
 
 .subTitle__btn {
@@ -70,4 +71,20 @@
 .subTitle__btn:hover {
     color: #198754;
     background-color: #f8f9fa;
+}
+
+
+@media (max-width: 600px) {
+    .subTitle__row {
+        flex-direction: column;
+        align-items: center;
+    }
+    .subTitle__logo {
+        max-width: 100%;
+        min-width: auto;
+        width: auto;    
+        }
+    .subTitle__btn {
+        width: 100%;
+        }
 }

@@ -48,6 +48,19 @@
 .main__btn {
     display: block;
     margin: 0 auto;
+    width: 16.2rem;
+    height: 3.2rem;
+}
+.main__btn div {
+    margin-top: -7%;
+}
+.main__form {
+    display: flex;
+    justify-content: center;
+}
+
+.modal-dialog {
+    margin-top: -9%;
 }
 
 .main__btn:hover {
@@ -60,18 +73,16 @@
 }
 
 .modales.show {
-    margin-top: 7%;
+    height: 400px;
 }
 
 .main__modal-title {
-    margin-top: 30px;
     text-align: center;
-    margin-bottom: 20px;
 }
 .main__input {
-    height: 2.8rem;
+    height: 2.4rem;
     padding: 0;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     text-align: center;
     border-radius: 1rem;
 }
@@ -83,8 +94,6 @@
 }
 
 .form_notice {
-    margin-top: 1rem;
-    margin-bottom: 2rem;
     font-size: 0.6rem;
     text-align: center;
     color: #666;

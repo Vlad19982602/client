@@ -28,18 +28,31 @@ import Header from './components/main-page/header/Header.jsx'
 import SubTitle from './components/main-page//subtitlePage/SubTitle.jsx'
 import Scroll from './components/scroll'
 import Modal from './components/main-page/modal/Modal.jsx'
+import Login from './components/Login';
+
+// const AppContent = ({children}) => {
+//   return (
+//     <>
+//         <Header />
+//         <SubTitle />
+//         <Routes>
+//           <Route path="/" element={<Home />} />
+//           <Route path="/register" element={<Register />} />
+//           <Route path="/login" element={<Login />} />
+//         </Routes>
+//       {children}
+//     </>
+//   );
+// };
 
 const Layout = ({ children }) => {
   const location = useLocation();
-  const showHeaderAndSubTitle = location.pathname !== '/register';
+  const showHeaderAndSubTitle = location.pathname !== '/register' && location.pathname !== '/login';
 
   return (
     <div>
-			{showHeaderAndSubTitle && <Scroll />}
-			{showHeaderAndSubTitle && <Modal />}
       {showHeaderAndSubTitle && <Header />}
       {showHeaderAndSubTitle && <SubTitle />}
-			{/* {showHeaderAndSubTitle && <Footer />}  */}
       {children}
     </div>
   );
@@ -47,7 +60,7 @@ const Layout = ({ children }) => {
 
 const LayoutFooter = ({ children }) => {
   const location = useLocation();
-  const showHeaderAndSubTitle = location.pathname !== '/register';
+  const showHeaderAndSubTitle = location.pathname !== '/register' && location.pathname !== '/login';
 
   return (
     <div>
@@ -62,11 +75,12 @@ function App() {
   return (
     <Router>
       <div className="App">
-        <Modal/>
-        <Layout/>
+        <Scroll />
+        <Modal />
         <Routes>
-          <Route path="/" element={<Home />} /> 
+          <Route path="/" element={<Layout><Home /></Layout>} /> 
           <Route path="/register" element={<Register />} />
+          <Route path="/login" element={<Login />} />
           <Route path="/about-us" element={<WeAll />} />
           <Route path="/vent-prom" element={<VentProm />} />
           <Route path="/dom" element={<Dom />} />
@@ -82,11 +96,11 @@ function App() {
           
           <Route path="/how-work" element={<HowWorked />} />
           <Route path="/contact" element={<Contactes />} />
-          <Route path="/blog" element={<Blogs />} />
+          <Route path="/blog" element={<Layout><Blogs /></Layout>} />
           <Route path="/resume" element={<JobOpening />} />
 
-          <Route path="/service" element={<Service />} />
-          <Route path="/portfolio" element={<Portfolio />} />
+          <Route path="/service" element={<Layout><Service /></Layout>} />
+          <Route path="/portfolio" element={<Layout><Portfolio /></Layout>} />
         </Routes>
         <LayoutFooter/>
       </div>

@@ -62,6 +62,13 @@ const Header = () => {
                     </Link>
                 </Button>
               </li>
+              <li>
+                <Button variant="primary">
+                  <Link className="header__menu__link-reg" to='/login'>
+                    Войти
+                  </Link>
+                </Button>
+              </li>
               <li className="header__menu-item">
                 <Link className="header__menu__link-item" to="/contact">
                   Контакты

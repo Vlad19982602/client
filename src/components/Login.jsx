@@ -1,15 +1,16 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
-import './register.css';
+import './login.css';
 
-const Register = () => {
+const Login = () => {
   const [formData, setFormData] = useState({
-    username: '',
     email: '',
     password: ''
   });
 
-  const { username, email, password } = formData;
+  const { email, password } = formData;
+  const navigate = useNavigate();
 
   const handleChange = e => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -18,25 +19,18 @@ const Register = () => {
   const handleSubmit = async e => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://localhost:5000/api/register', formData);
-      console.log(response.data);
+      const response = await axios.post('http://localhost:5000/api/login', formData);
+      localStorage.setItem('token', response.data.token);
+      navigate('/');
     } catch (error) {
       console.error('There was an error!', error);
     }
   };
 
   return (
-    <div className="register-container">
-      <form className="register-form" onSubmit={handleSubmit}>
-        <h2>Регистрация</h2>
-        <input
-          type="text"
-          name="username"
-          value={username}
-          onChange={handleChange}
-          placeholder="Имя"
-          required
-        />
+    <div className="login-container">
+      <form className="login-form" onSubmit={handleSubmit}>
+        <h2>Войти</h2>
         <input
           type="email"
           name="email"
@@ -53,10 +47,11 @@ const Register = () => {
           placeholder="Пароль"
           required
         />
-        <button type="submit">Регистрация</button>
+        <button type="submit">Войти</button>
       </form>
     </div>
   );
 };
 
-export default Register;
+
+export default Login;

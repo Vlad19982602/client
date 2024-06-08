@@ -21,7 +21,7 @@ const Login = () => {
     try {
       const response = await axios.post('http://localhost:5000/api/login', formData);
       localStorage.setItem('token', response.data.token);
-      navigate('/');
+      navigate('/profile');
     } catch (error) {
       console.error('There was an error!', error);
     }
@@ -52,6 +52,5 @@ const Login = () => {
     </div>
   );
 };
-
 
 export default Login;

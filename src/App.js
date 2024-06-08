@@ -29,6 +29,7 @@ import SubTitle from './components/main-page//subtitlePage/SubTitle.jsx'
 import Scroll from './components/scroll'
 import Modal from './components/main-page/modal/Modal.jsx'
 import Login from './components/Login';
+import Profile from './components/Profile';
 
 // const AppContent = ({children}) => {
 //   return (
@@ -81,6 +82,7 @@ function App() {
           <Route path="/" element={<Layout><Home /></Layout>} /> 
           <Route path="/register" element={<Register />} />
           <Route path="/login" element={<Login />} />
+          <Route path="/profile" element={<Layout><Profile /></Layout>} />
           <Route path="/about-us" element={<WeAll />} />
           <Route path="/vent-prom" element={<VentProm />} />
           <Route path="/dom" element={<Dom />} />

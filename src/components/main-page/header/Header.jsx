@@ -1,9 +1,33 @@
 import "./header.css";
+import React, { useEffect, useState } from 'react';
 import Dropdown from "react-bootstrap/Dropdown";
 import { Link } from 'react-router-dom';
 import Button from 'react-bootstrap/Button';
+import axios from 'axios';
 
 const Header = () => {
+  const [user, setUser] = useState(null);
+
+  useEffect(() => {
+    const fetchUserData = async () => {
+      const token = localStorage.getItem('token');
+      if (token) {
+        try {
+          const response = await axios.get('http://localhost:5000/api/profile', {
+            headers: {
+              Authorization: `Bearer ${token}`
+            }
+          });
+          setUser(response.data);
+        } catch (error) {
+          console.error('Error fetching user data:', error);
+        }
+      }
+    };
+
+    fetchUserData();
+  }, []);
+
   return (
     <header>
       <div className="header">
@@ -84,6 +108,11 @@ const Header = () => {
                   Вакансии
                 </Link>
               </li>
+              {user && (
+                <li className="header__menu-item">
+                  <img src={user.avatar} alt="User Avatar" className="header__avatar" />
+                </li>
+              )}
             </ul>
           </nav>
         </div>

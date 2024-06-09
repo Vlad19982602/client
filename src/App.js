@@ -83,23 +83,23 @@ function App() {
           <Route path="/register" element={<Register />} />
           <Route path="/login" element={<Login />} />
           <Route path="/profile" element={<Layout><Profile /></Layout>} />
-          <Route path="/about-us" element={<WeAll />} />
-          <Route path="/vent-prom" element={<VentProm />} />
-          <Route path="/dom" element={<Dom />} />
-          <Route path="/groceries" element={<Groceries />} />
-          <Route path="/calculator" element={<Calculator />} />
-          <Route path="/private-house" element={<PrivateHouse />} />
-          <Route path="/prom-house" element={<PromHouse />} />
-          <Route path="/asp-house" element={<AspHouse />} />
-          <Route path="/inter-house" element={<InterHouse />} />
-          <Route path="/job-house" element={<JobHouse />} />
+          <Route path="/about-us" element={<Layout><WeAll /></Layout>} />
+          <Route path="/vent-prom" element={<Layout><VentProm /></Layout>} />
+          <Route path="/dom" element={<Layout><Dom /></Layout>} />
+          <Route path="/groceries" element={<Layout><Groceries /></Layout>} />
+          <Route path="/calculator" element={<Layout><Calculator /></Layout>} />
+          <Route path="/private-house" element={<Layout><PrivateHouse /></Layout>} />
+          <Route path="/prom-house" element={<Layout><PromHouse /></Layout>} />
+          <Route path="/asp-house" element={<Layout><AspHouse /></Layout>} />
+          <Route path="/inter-house" element={<Layout><InterHouse /></Layout>} />
+          <Route path="/job-house" element={<Layout><JobHouse /></Layout>} />
 
 
           
-          <Route path="/how-work" element={<HowWorked />} />
-          <Route path="/contact" element={<Contactes />} />
+          <Route path="/how-work" element={<Layout><HowWorked /></Layout>} />
+          <Route path="/contact" element={<Layout><Contactes /></Layout>} />
           <Route path="/blog" element={<Layout><Blogs /></Layout>} />
-          <Route path="/resume" element={<JobOpening />} />
+          <Route path="/resume" element={<Layout><JobOpening /></Layout>} />
 
           <Route path="/service" element={<Layout><Service /></Layout>} />
           <Route path="/portfolio" element={<Layout><Portfolio /></Layout>} />

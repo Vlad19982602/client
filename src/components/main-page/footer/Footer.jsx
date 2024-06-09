@@ -6,8 +6,8 @@ const Footer = () => {
       {/* Footer */}
       <footer className="footer">
         <div className="container">
-          <div className="row">
-            <div className="col-sm-3 col-xs-12">
+          <div className="row footer__row">
+            <div className="col-sm-2 col-xs-12">
               <br />
               <br />
               <div className="footer__text t-descr t-descr_xxs" field="text">
@@ -25,7 +25,7 @@ const Footer = () => {
                 </div>
               </div>
             </div>
-            <div className="col-sm-3 col-xs-12">
+            <div className="col-sm-2 col-xs-12">
               <div className="footer__descr t-descr t-descr_xxs" field="descr">
                 <br />
                 <br />
@@ -51,7 +51,7 @@ const Footer = () => {
               </div>
               <div className="footer__floatbeaker_lr3" />
             </div>
-            <div className="col-sm-3 col-xs-12">
+            <div className="col-sm-2 col-xs-12">
               <div className="footer__col boosttrap-col boosttrap-col_3">
                 <div className="footer__descr t-descr t-descr_xxs">
                   <br />
@@ -78,7 +78,7 @@ const Footer = () => {
                 </div>
               </div>
             </div>
-            <div className="col-sm-3 col-xs-12">
+            <div className="col-sm-2 col-xs-12">
               <div className="footer__col boosttrap-col boosttrap-col_3">
                 <div className="footer__descr t-descr t-descr_xxs">
                   <br />

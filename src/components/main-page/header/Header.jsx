@@ -34,6 +34,16 @@ const Header = () => {
         <div className="header__container">
           <nav className="header__menu">
             <ul className="header__menu-list">
+              <li className="header__menu-item">
+                <Link to="/" className='header__menu__link-item'>
+                  Главная
+                </Link>
+              </li>
+              <li className="header__menu-item">
+                <Link to="/about-us" className='header__menu__link-item'>
+                  О нас
+                </Link>
+              </li>
               <Dropdown>
                 <Dropdown.Toggle variant="success" id="dropdown-basic">
                   Услуги
@@ -75,18 +85,23 @@ const Header = () => {
                 </Dropdown.Menu>
               </Dropdown>
               <li className="header__menu-item">
-                <Link className="header__menu__link-item" to="/how-work">
+                <Link to="/how-work" className='header__menu__link-item'>
                   Как работаем
                 </Link>
               </li>
-              <li>
+              <li className="header__menu-item">
+                <Link className='header__menu__link-item' to="/contact">
+                  Контакты
+                </Link>
+              </li>
+              <li className='header__menu-reg'>
                 <Button>
                     <Link variant="success" className="header__menu__link-reg" to='/register'>
                       Регистрация
                     </Link>
                 </Button>
               </li>
-              <li>
+              <li className='header__menu-reg'>
                 <Button variant="primary">
                   <Link className="header__menu__link-reg" to='/login'>
                     Войти
@@ -94,17 +109,12 @@ const Header = () => {
                 </Button>
               </li>
               <li className="header__menu-item">
-                <Link className="header__menu__link-item" to="/contact">
-                  Контакты
-                </Link>
-              </li>
-              <li className="header__menu-item">
-                <Link className="header__menu__link-item" to="/blog">
+                <Link className='header__menu__link-item' to="/blog">
                   Блог
                 </Link>
               </li>
               <li className="header__menu-item">
-                <Link className="header__menu__link-item" to="/resume">
+                <Link className='header__menu__link-item' to="/resume">
                   Вакансии
                 </Link>
               </li>

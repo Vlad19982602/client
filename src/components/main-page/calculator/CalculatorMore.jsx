@@ -11,7 +11,7 @@ const Calculator = () => {
     question2: 90,
     question3: [],
     question4: [],
-    question5: ''
+    question5: { method: '', contact: '' }
   });
 
   const [showModal, setShowModal] = useState({
@@ -24,14 +24,22 @@ const Calculator = () => {
 
   const [result, setResult] = useState(null);
 
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData({ ...formData, [name]: value });
+  const handleCheckboxChange = (e, question) => {
+    const { value, checked } = e.target;
+    setFormData((prevFormData) => ({
+      ...prevFormData,
+      [question]: checked
+        ? [...prevFormData[question], value]
+        : prevFormData[question].filter((v) => v !== value)
+    }));
   };
 
   const handleRangeChange = (e) => {
     const { value } = e.target;
-    setFormData((prevData) => ({ ...prevData, question2: value }));
+    setFormData((prevFormData) => ({
+      ...prevFormData,
+      question2: value
+    }));
   };
 
   const handleContactChange = (e) => {
@@ -45,21 +53,11 @@ const Calculator = () => {
     }));
   };
 
-  const handleCheckboxChange = (e, question) => {
-    const { value, checked } = e.target;
-    setFormData((prevFormData) => ({
-      ...prevFormData,
-      [question]: checked
-        ? [...prevFormData[question], value]
-        : prevFormData[question].filter((v) => v !== value)
-    }));
-  };
-
-  const handleSubmit = async (e) => {
-    e.preventDefault();
+  const handleSubmit = async () => {
     try {
       const response = await axios.post('http://localhost:5000/api/calculate', formData);
       setResult(response.data);
+      handleModalClose('question5');
     } catch (error) {
       console.error('Error calculating:', error);
     }
@@ -87,15 +85,15 @@ const Calculator = () => {
   ];
 
   const optionsQuestion3 = [
-    "Подача чистого воздуха в помещение",
-    "Изменение и поддержание температуры воздуха",
-    "Осушение воздуха (уменьшение влажности)",
-    "Другое"
-  ];
+    "Подача чистого воздуха в помещение",
+    "Изменение и поддержание температуры воздуха",
+    "Осушение воздуха (уменьшение влажности)",
+    "Другое"
+  ];
 
   const optionsQuestion4 = [
-    "в течение 2-6 месяцев",
-    "в течение 1 года",
+    "В течение 2-6 месяцев",
+    "В течение 1 года",
     "Другое"
   ];
 
@@ -268,8 +266,8 @@ const Calculator = () => {
                                               <Form.Control
                                                 type="text"
                                                 name={question}
-                                                value={"check"}
-                                                onChange={handleChange}
+                                                value={formData[question]}
+                                                onChange={(e) => handleCheckboxChange(e, question)}
                                                 placeholder={`Ваш ответ на вопрос ${index + 2}`}
                                               />
                                             )}

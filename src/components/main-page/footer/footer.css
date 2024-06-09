@@ -7,6 +7,19 @@
   background: #485358;
 }
 
+.footer__row {
+  display: flex;
+  justify-content: center;
+}
+
+.footer__text span {
+  font-family: "Ubuntu", Arial, sans-serif;
+  font-weight: 400;
+  color: #252c35;
+  font-size: 18px;
+  line-height: 1.55;
+}
+
 .t-descr {
   font-family: "Ubuntu", Arial, sans-serif;
   font-weight: 400;
@@ -15,7 +28,8 @@
 
 .footer_a {
   transition: all 1.2s;
-  width: 105px;
+  width: 130px;
+  font-size: 20px;
 }
 .footer_a:hover {
   transform: scale(1.2);

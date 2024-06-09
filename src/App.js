@@ -26,10 +26,18 @@ import Register from './components/Register'
 import Footer from './components/main-page/footer/Footer.jsx'
 import Header from './components/main-page/header/Header.jsx'
 import SubTitle from './components/main-page//subtitlePage/SubTitle.jsx'
-import Scroll from './components/scroll'
+import Scroll from './components/scroll.js'
 import Modal from './components/main-page/modal/Modal.jsx'
-import Login from './components/Login';
-import Profile from './components/Profile';
+import Login from './components/Login.jsx'
+import Profile from './components/Profile.jsx'
+import Material from './components/calc-components/Material.jsx'
+import WorkTime from './components/calc-components/WorkTime.jsx'
+import Financials from './components/calc-components/Financials.jsx'
+import Clients from './components/calc-components/Clients.jsx'
+import Projects from './components/calc-components/Projects.jsx'
+import Employees from './components/calc-components/Employees.jsx'
+import Contractors from './components/calc-components/Contractors.jsx'
+import Equipment from './components/calc-components/Equipment.jsx'
 
 // const AppContent = ({children}) => {
 //   return (
@@ -83,6 +91,14 @@ function App() {
           <Route path="/register" element={<Register />} />
           <Route path="/login" element={<Login />} />
           <Route path="/profile" element={<Layout><Profile /></Layout>} />
+          <Route path="/materials" element={<Layout><Material /></Layout>} />
+          <Route path="/worktime" element={<Layout><WorkTime /></Layout>} />
+          <Route path="/financials" element={<Layout><Financials /></Layout>} />
+          <Route path="/clients" element={<Layout><Clients /></Layout>} />
+          <Route path="/projects" element={<Layout><Projects /></Layout>} />
+          <Route path="/employees" element={<Layout><Employees /></Layout>} />
+          <Route path="/contractors" element={<Layout><Contractors /></Layout>} />
+          <Route path="/equipment" element={<Layout><Equipment /></Layout>} />
           <Route path="/about-us" element={<Layout><WeAll /></Layout>} />
           <Route path="/vent-prom" element={<Layout><VentProm /></Layout>} />
           <Route path="/dom" element={<Layout><Dom /></Layout>} />

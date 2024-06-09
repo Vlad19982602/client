@@ -1,0 +1,35 @@
+.employees-container {
+  padding: 20px;
+}
+
+.employees-container h2 {
+  margin-bottom: 20px;
+}
+
+.employees-container input {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.employees-container button {
+  padding: 10px 20px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.employees-container ul {
+  list-style: none;
+  padding: 0;
+}
+
+.employees-container li {
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}

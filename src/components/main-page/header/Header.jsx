@@ -118,6 +118,41 @@ const Header = () => {
                   Вакансии
                 </Link>
               </li>
+              <Dropdown>
+                <Dropdown.Toggle variant="success" id="dropdown-basic">
+                  Уголок клиента
+                </Dropdown.Toggle>
+
+                <Dropdown.Menu>
+                  <Dropdown.Item as={Link} to="/users">
+                    Пользователи
+                  </Dropdown.Item>
+                  <Dropdown.Item as={Link} to="/clients">
+                    Клиенты
+                  </Dropdown.Item>
+                  <Dropdown.Item as={Link} to="/projects">
+                    Проекты
+                  </Dropdown.Item>
+                  <Dropdown.Item as={Link} to="/materials">
+                    Материалы
+                  </Dropdown.Item>
+                  <Dropdown.Item as={Link} to="/equipment">
+                    Оборудование
+                  </Dropdown.Item>
+                  <Dropdown.Item as={Link} to="/employees">
+                    Сотрудники
+                  </Dropdown.Item>
+                  <Dropdown.Item as={Link} to="/contractors">
+                    Подрядчики
+                  </Dropdown.Item>
+                  <Dropdown.Item as={Link} to="/worktime">
+                    Рабочее время
+                  </Dropdown.Item>
+                  <Dropdown.Item as={Link} to="/financials">
+                    Финансовые затраты
+                  </Dropdown.Item>
+                </Dropdown.Menu>
+              </Dropdown>
               {user && (
                 <li className="header__menu-item">
                   <img src={user.avatar} alt="User Avatar" className="header__avatar" />

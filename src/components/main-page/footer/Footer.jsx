@@ -8,22 +8,24 @@ const Footer = () => {
         <div className="container">
           <div className="row footer__row">
             <div className="col-sm-2 col-xs-12">
-              <br />
-              <br />
-              <div className="footer__text t-descr t-descr_xxs" field="text">
-                <div style={{ color: "#ffffff" }}>
-                  <span style={{ color: "rgb(247, 250, 246)" }}>
-                    © 2013-2024 АИРМАСТЕР
-                    <br />
-                    +7 (922) 630-21-03 <br />
-                    <span style={{ color: "#198754" }}>
-                      vent@airmaster74.ru
+              <a href='/'>
+                <br />
+                <br />
+                <div className="footer__text t-descr t-descr_xxs" field="text">
+                  <div style={{ color: "#ffffff" }}>
+                    <span style={{ color: "rgb(247, 250, 246)" }}>
+                      © 2013-2024 АИРМАСТЕР
+                      <br />
+                      +7 (922) 630-21-03 <br />
+                      <span style={{ color: "#198754" }}>
+                        vent@airmaster74.ru
+                      </span>
                     </span>
-                  </span>
-                  <br />
-                  <br />
+                    <br />
+                    <br />
+                  </div>
                 </div>
-              </div>
+              </a>
             </div>
             <div className="col-sm-2 col-xs-12">
               <div className="footer__descr t-descr t-descr_xxs" field="descr">

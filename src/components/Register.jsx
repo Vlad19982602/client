@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import './register.css';
+import { useNavigate } from 'react-router-dom';
 
 const Register = () => {
   const [formData, setFormData] = useState({
@@ -10,6 +11,7 @@ const Register = () => {
   });
 
   const { username, email, password } = formData;
+  const navigate = useNavigate();
 
   const handleChange = e => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -18,8 +20,13 @@ const Register = () => {
   const handleSubmit = async e => {
     e.preventDefault();
     try {
+      console.log('Sending registration request:', formData);
       const response = await axios.post('http://localhost:5000/api/register', formData);
-      console.log(response.data);
+      console.log('Registration successful:', response.data);
+      // Сохранение токена аутентификации в локальном хранилище
+      localStorage.setItem('token', response.data.token);
+      // Перенаправление на главную страницу после успешной регистрации
+      navigate('/');
     } catch (error) {
       console.error('There was an error!', error);
     }

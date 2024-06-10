@@ -52,7 +52,7 @@ const Equipment = () => {
       />
       <button onClick={handleAddEquipment}>Добавить оборудование</button>
       <ul>
-        {equipment.length > 0 ? (
+        {equipment && equipment.length > 0 ? (
           equipment.map((equip) => (
             <li key={equip.id}>{equip.name} - {equip.quantity}</li>
           ))

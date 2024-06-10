@@ -3,12 +3,12 @@ import axios from 'axios';
 import './contractors.css';
 
 const Contractors = () => {
-  const [contractors, setContractors] = useState();
+  const [contractors, setContractors] = useState([]);
   const [newContractor, setNewContractor] = useState({ name: '', email: '', phone: '' });
 
   useEffect(() => {
     fetchContractors();
-  }, );
+  }, []);
 
   const fetchContractors = async () => {
     try {
@@ -22,7 +22,7 @@ const Contractors = () => {
   const handleAddContractor = async () => {
     try {
       const response = await axios.post('http://localhost:5000/api/contractors', newContractor);
-      setContractors(...contractors, response.data);
+      setContractors([...contractors, response.data]);
       setNewContractor({ name: '', email: '', phone: '' });
     } catch (error) {
       console.error('Error adding contractor:', error);
@@ -52,7 +52,7 @@ const Contractors = () => {
       />
       <button onClick={handleAddContractor}>Добавить подрядчика</button>
       <ul>
-        {contractors.length > 0 ? (
+        {contractors && contractors.length > 0 ? (
           contractors.map((contractor) => (
             <li key={contractor.id}>{contractor.name} - {contractor.email} - {contractor.phone}</li>
           ))

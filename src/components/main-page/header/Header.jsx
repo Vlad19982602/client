@@ -1,32 +1,25 @@
 import "./header.css";
 import React, { useEffect, useState } from 'react';
 import Dropdown from "react-bootstrap/Dropdown";
-import { Link } from 'react-router-dom';
 import Button from 'react-bootstrap/Button';
-import axios from 'axios';
+import { Link, useNavigate } from 'react-router-dom'; 
 
 const Header = () => {
-  const [user, setUser] = useState(null);
+  const [isAuthenticated, setIsAuthenticated] = useState(false);
+  const navigate = useNavigate();
 
   useEffect(() => {
-    const fetchUserData = async () => {
-      const token = localStorage.getItem('token');
-      if (token) {
-        try {
-          const response = await axios.get('http://localhost:5000/api/profile', {
-            headers: {
-              Authorization: `Bearer ${token}`
-            }
-          });
-          setUser(response.data);
-        } catch (error) {
-          console.error('Error fetching user data:', error);
-        }
-      }
-    };
-
-    fetchUserData();
+    const token = localStorage.getItem('token');
+    if (token) {
+      setIsAuthenticated(true);
+    }
   }, []);
+
+  const handleLogout = () => {
+    localStorage.removeItem('token');
+    setIsAuthenticated(false);
+    navigate('/login');
+  };
 
   return (
     <header>
@@ -34,6 +27,69 @@ const Header = () => {
         <div className="header__container">
           <nav className="header__menu">
             <ul className="header__menu-list">
+              {isAuthenticated ? (
+                <>
+                  <li>
+                    <Button variant="primary" onClick={handleLogout}>
+                      Выйти
+                    </Button>
+                  </li>
+                  <li>
+                    <Dropdown>
+                      <Dropdown.Toggle variant="success" id="dropdown-basic" className="header__menu__dropdown-toggle">
+                        Меню
+                      </Dropdown.Toggle>
+
+                      <Dropdown.Menu className="header__menu__dropdown-menu">
+                        <Dropdown.Item as={Link} to="/users" className="header__menu__dropdown-item">
+                          Пользователи
+                        </Dropdown.Item>
+                        <Dropdown.Item as={Link} to="/clients" className="header__menu__dropdown-item">
+                          Клиенты
+                        </Dropdown.Item>
+                        <Dropdown.Item as={Link} to="/projects" className="header__menu__dropdown-item">
+                          Проекты
+                        </Dropdown.Item>
+                        <Dropdown.Item as={Link} to="/materials" className="header__menu__dropdown-item">
+                          Материалы
+                        </Dropdown.Item>
+                        <Dropdown.Item as={Link} to="/equipment" className="header__menu__dropdown-item">
+                          Оборудование
+                        </Dropdown.Item>
+                        <Dropdown.Item as={Link} to="/employees" className="header__menu__dropdown-item">
+                          Сотрудники
+                        </Dropdown.Item>
+                        <Dropdown.Item as={Link} to="/contractors" className="header__menu__dropdown-item">
+                          Подрядчики
+                        </Dropdown.Item>
+                        <Dropdown.Item as={Link} to="/worktime" className="header__menu__dropdown-item">
+                          Рабочее время
+                        </Dropdown.Item>
+                        <Dropdown.Item as={Link} to="/financials" className="header__menu__dropdown-item">
+                          Финансовые затраты
+                        </Dropdown.Item>
+                      </Dropdown.Menu>
+                    </Dropdown>
+                  </li>
+                </>
+              ) : (
+                <>
+                  <li>
+                    <Button variant="success">
+                      <Link className="header__menu__link-reg" to='/register'>
+                        Регистрация
+                      </Link>
+                    </Button>
+                  </li>
+                  <li>
+                    <Button variant="primary">
+                      <Link className="header__menu__link-reg" to='/login'>
+                        Войти
+                      </Link>
+                    </Button>
+                  </li>
+                </>
+              )}
               <li className="header__menu-item">
                 <Link to="/" className='header__menu__link-item'>
                   Главная
@@ -94,20 +150,6 @@ const Header = () => {
                   Контакты
                 </Link>
               </li>
-              <li className='header__menu-reg'>
-                <Button>
-                    <Link variant="success" className="header__menu__link-reg" to='/register'>
-                      Регистрация
-                    </Link>
-                </Button>
-              </li>
-              <li className='header__menu-reg'>
-                <Button variant="primary">
-                  <Link className="header__menu__link-reg" to='/login'>
-                    Войти
-                  </Link>
-                </Button>
-              </li>
               <li className="header__menu-item">
                 <Link className='header__menu__link-item' to="/blog">
                   Блог
@@ -118,46 +160,6 @@ const Header = () => {
                   Вакансии
                 </Link>
               </li>
-              <Dropdown>
-                <Dropdown.Toggle variant="success" id="dropdown-basic">
-                  Уголок клиента
-                </Dropdown.Toggle>
-
-                <Dropdown.Menu>
-                  <Dropdown.Item as={Link} to="/users">
-                    Пользователи
-                  </Dropdown.Item>
-                  <Dropdown.Item as={Link} to="/clients">
-                    Клиенты
-                  </Dropdown.Item>
-                  <Dropdown.Item as={Link} to="/projects">
-                    Проекты
-                  </Dropdown.Item>
-                  <Dropdown.Item as={Link} to="/materials">
-                    Материалы
-                  </Dropdown.Item>
-                  <Dropdown.Item as={Link} to="/equipment">
-                    Оборудование
-                  </Dropdown.Item>
-                  <Dropdown.Item as={Link} to="/employees">
-                    Сотрудники
-                  </Dropdown.Item>
-                  <Dropdown.Item as={Link} to="/contractors">
-                    Подрядчики
-                  </Dropdown.Item>
-                  <Dropdown.Item as={Link} to="/worktime">
-                    Рабочее время
-                  </Dropdown.Item>
-                  <Dropdown.Item as={Link} to="/financials">
-                    Финансовые затраты
-                  </Dropdown.Item>
-                </Dropdown.Menu>
-              </Dropdown>
-              {user && (
-                <li className="header__menu-item">
-                  <img src={user.avatar} alt="User Avatar" className="header__avatar" />
-                </li>
-              )}
             </ul>
           </nav>
         </div>

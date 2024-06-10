@@ -3,12 +3,12 @@ import axios from 'axios';
 import './employees.css';
 
 const Employees = () => {
-  const [employees, setEmployees] = useState();
+  const [employees, setEmployees] = useState([]);
   const [newEmployee, setNewEmployee] = useState({ firstName: '', lastName: '', email: '', phone: '' });
 
   useEffect(() => {
     fetchEmployees();
-  }, );
+  }, []);
 
   const fetchEmployees = async () => {
     try {
@@ -22,7 +22,7 @@ const Employees = () => {
   const handleAddEmployee = async () => {
     try {
       const response = await axios.post('http://localhost:5000/api/employees', newEmployee);
-      setEmployees(...employees, response.data);
+      setEmployees([...employees, response.data]);
       setNewEmployee({ firstName: '', lastName: '', email: '', phone: '' });
     } catch (error) {
       console.error('Error adding employee:', error);
@@ -58,9 +58,13 @@ const Employees = () => {
       />
       <button onClick={handleAddEmployee}>Добавить сотрудника</button>
       <ul>
-        {employees.map((employee) => (
-          <li key={employee.id}>{employee.firstName} {employee.lastName} - {employee.email} - {employee.phone}</li>
-        ))}
+        {employees && employees.length > 0 ? (
+          employees.map((employee) => (
+            <li key={employee.id}>{employee.firstName} {employee.lastName} - {employee.email} - {employee.phone}</li>
+          ))
+        ) : (
+          <p>Нет доступных сотрудников</p>
+        )}
       </ul>
     </div>
   );

@@ -39,6 +39,11 @@ import Employees from './components/calc-components/Employees.jsx'
 import Contractors from './components/calc-components/Contractors.jsx'
 import Equipment from './components/calc-components/Equipment.jsx'
 
+
+import Users from './components/Users';
+
+import PrivateRoute from './components/PrivateRoute'; // Импортируем PrivateRoute
+
 // const AppContent = ({children}) => {
 //   return (
 //     <>
@@ -90,15 +95,20 @@ function App() {
           <Route path="/" element={<Layout><Home /></Layout>} /> 
           <Route path="/register" element={<Register />} />
           <Route path="/login" element={<Login />} />
-          <Route path="/profile" element={<Layout><Profile /></Layout>} />
-          <Route path="/materials" element={<Layout><Material /></Layout>} />
-          <Route path="/worktime" element={<Layout><WorkTime /></Layout>} />
-          <Route path="/financials" element={<Layout><Financials /></Layout>} />
-          <Route path="/clients" element={<Layout><Clients /></Layout>} />
-          <Route path="/projects" element={<Layout><Projects /></Layout>} />
-          <Route path="/employees" element={<Layout><Employees /></Layout>} />
-          <Route path="/contractors" element={<Layout><Contractors /></Layout>} />
-          <Route path="/equipment" element={<Layout><Equipment /></Layout>} />
+          <Route path="/profile" element={<PrivateRoute element={Profile} />} />
+          <Route path="/materials" element={<PrivateRoute element={Material} />} />
+          <Route path="/worktime" element={<PrivateRoute element={WorkTime} />} />
+          <Route path="/financials" element={<PrivateRoute element={Financials} />} />
+          <Route path="/clients" element={<PrivateRoute element={Clients} />} />
+          <Route path="/projects" element={<PrivateRoute element={Projects} />} />
+          <Route path="/employees" element={<PrivateRoute element={Employees} />} />
+          <Route path="/contractors" element={<PrivateRoute element={Contractors} />} />
+          <Route path="/equipment" element={<PrivateRoute element={Equipment} />} />
+          <Route path="/users" element={<PrivateRoute element={Users} />} />
+
+
+
+
           <Route path="/about-us" element={<Layout><WeAll /></Layout>} />
           <Route path="/vent-prom" element={<Layout><VentProm /></Layout>} />
           <Route path="/dom" element={<Layout><Dom /></Layout>} />

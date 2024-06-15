@@ -35,6 +35,11 @@ const Header = () => {
                     </Button>
                   </li>
                   <li>
+                    <Button variant="success" >
+                      <Link to="/calculate" className='header__menu-calc'>Калькулятор</Link> 
+                    </Button>
+                  </li>
+                  <li>
                     <Dropdown>
                       <Dropdown.Toggle variant="success" id="dropdown-basic" className="header__menu__dropdown-toggle">
                         Меню
@@ -74,13 +79,22 @@ const Header = () => {
                 </>
               ) : (
                 <>
-                  <li>
+                    <Dropdown>
+                      <Dropdown.Toggle variant="success" id="dropdown-basic" className="header__menu__dropdown-toggle">
+                        Меню
+                      </Dropdown.Toggle>
+
+                      <Dropdown.Menu className="header__menu__dropdown-menu">
+                        <Dropdown.Item as={Link} to="/clients" className="header__menu__dropdown-item">
+                          Клиенты
+                        </Dropdown.Item>
+                      </Dropdown.Menu>
+                    </Dropdown>
                     <Button variant="success">
                       <Link className="header__menu__link-reg" to='/register'>
                         Регистрация
                       </Link>
                     </Button>
-                  </li>
                   <li>
                     <Button variant="primary">
                       <Link className="header__menu__link-reg" to='/login'>

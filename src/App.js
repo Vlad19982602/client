@@ -38,26 +38,13 @@ import Projects from './components/calc-components/Projects.jsx'
 import Employees from './components/calc-components/Employees.jsx'
 import Contractors from './components/calc-components/Contractors.jsx'
 import Equipment from './components/calc-components/Equipment.jsx'
+import Reports from './components/calc-components/Reports.jsx';
+
 
 
 import Users from './components/Users';
 
-import PrivateRoute from './components/PrivateRoute'; // Импортируем PrivateRoute
-
-// const AppContent = ({children}) => {
-//   return (
-//     <>
-//         <Header />
-//         <SubTitle />
-//         <Routes>
-//           <Route path="/" element={<Home />} />
-//           <Route path="/register" element={<Register />} />
-//           <Route path="/login" element={<Login />} />
-//         </Routes>
-//       {children}
-//     </>
-//   );
-// };
+import PrivateRoute from './components/PrivateRoute';
 
 const Layout = ({ children }) => {
   const location = useLocation();
@@ -105,6 +92,7 @@ function App() {
           <Route path="/contractors" element={<PrivateRoute element={Contractors} />} />
           <Route path="/equipment" element={<PrivateRoute element={Equipment} />} />
           <Route path="/users" element={<PrivateRoute element={Users} />} />
+          <Route path="/reports" element={<PrivateRoute element={Reports} />} /> 
 
 
 

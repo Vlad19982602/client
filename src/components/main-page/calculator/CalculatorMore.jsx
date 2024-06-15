@@ -112,10 +112,14 @@ const Calculator = () => {
                         </Button>
 
                         {result && (
-                        <div className="result">
+                          <div className="result">
                             <h4>Результат расчета:</h4>
-                            <p>{result}</p>
-                        </div>
+                            <p><strong>Тип помещения:</strong> {result.question1.join(', ')}</p>
+                            <p><strong>Размер помещения:</strong> {result.question2} кв.м</p>
+                            <p><strong>Цель вентиляции:</strong> {result.question3.join(', ')}</p>
+                            <p><strong>Сроки выполнения:</strong> {result.question4.join(', ')}</p>
+                            <p><strong>Контактная информация:</strong> Метод - {result.question5.method}, Контакт - {result.question5.contact}</p>
+                          </div>
                         )}
 
                         {/* Модальные окна для вопросов */}

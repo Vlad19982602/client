@@ -5,6 +5,7 @@ import './login.css';
 
 const Login = () => {
   const [formData, setFormData] = useState({
+    login: '',
     email: '',
     password: ''
   });

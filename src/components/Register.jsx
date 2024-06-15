@@ -9,6 +9,7 @@ const Register = () => {
     email: '',
     password: ''
   });
+  const [errorMessage, setErrorMessage] = useState('');
 
   const { username, email, password } = formData;
   const navigate = useNavigate();
@@ -29,6 +30,12 @@ const Register = () => {
       navigate('/');
     } catch (error) {
       console.error('There was an error!', error);
+      if (error.response && error.response.data && error.response.data.error) {
+        setErrorMessage(error.response.data.error);
+      } else {
+        setErrorMessage('Произошла ошибка при регистрации'
+          );
+      }
     }
   };
 

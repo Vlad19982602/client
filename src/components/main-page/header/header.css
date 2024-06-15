@@ -53,3 +53,8 @@ a.header__menu__link-item {
   font-size: 16px;
   padding: 7px 15px;
 }
+
+.header__menu-calc {
+  text-decoration: none;
+  color: #fff;
+}

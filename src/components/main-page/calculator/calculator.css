@@ -165,22 +165,19 @@
 }
 
 .result {
-  background-color: #e9ffe9;
-  border: 2px solid #76b82a;
-  border-radius: 8px;
-  padding: 20px;
   margin-top: 20px;
-  text-align: center;
-  color: #252c35;
+  padding: 10px;
+  border: 1px solid #76b82a;
+  border-radius: 5px;
+  background-color: #76b82a;
 }
 
 .result h4 {
-  font-size: 20px;
-  font-weight: bold;
-  color: #252c35;
+  color: #FFF;
   margin-bottom: 10px;
 }
 
 .result p {
-  font-size: 16px;
+  color: #fff;
+  margin: 0 auto;
 }

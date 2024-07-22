@@ -114,11 +114,11 @@ const Calculator = () => {
                         {result && (
                           <div className="result">
                             <h4>Результат расчета:</h4>
-                            <p><strong>Тип помещения:</strong> {result.question1.join(', ')}</p>
+                            <p><strong>Тип помещения:</strong> {Array.isArray(result.question1) ? result.question1.join(', ') : 'Данные отсутствуют'}</p>
                             <p><strong>Размер помещения:</strong> {result.question2} кв.м</p>
-                            <p><strong>Цель вентиляции:</strong> {result.question3.join(', ')}</p>
-                            <p><strong>Сроки выполнения:</strong> {result.question4.join(', ')}</p>
-                            <p><strong>Контактная информация:</strong> Метод - {result.question5.method}, Контакт - {result.question5.contact}</p>
+                            <p><strong>Цель вентиляции:</strong> {Array.isArray(result.question3) ? result.question3.join(', ') : 'Данные отсутствуют'}</p>
+                            <p><strong>Сроки выполнения:</strong> {Array.isArray(result.question4) ? result.question4.join(', ') : 'Данные отсутствуют'}</p>
+                            <p><strong>Контактная информация:</strong> Метод - {result.question5?.method || 'Данные отсутствуют'}, Контакт - {result.question5?.contact || 'Данные отсутствуют'}</p>
                           </div>
                         )}
 
